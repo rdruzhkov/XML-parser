@@ -21,13 +21,13 @@
     <ClCompile Include="lex.yy.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="XML-parser.c">
+    <ClCompile Include="Utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Element.c">
+    <ClCompile Include="cstr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="List.cpp">
+    <ClCompile Include="XML-parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -43,10 +43,7 @@
     <ClInclude Include="y.tab.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="Element.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="List.h">
+    <ClInclude Include="C_Structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

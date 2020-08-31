@@ -1,74 +1,56 @@
 %{ 
-    #define _CRT_SECURE_NO_WARNINGS
-
-    #include <stdio.h>
-    #include <string.h>
+    #include "C_Structs.h"
     
 #ifdef _DEBUG
     #define YYDEBUG 1
     yydebug = 1; 
 #endif
-
+    
 %} 
-
-    %union {
-        char *  type_cstr;
-        float   type_float;
+    
+    %union { 
+        char *              type_cstr;
+        float               type_float;
+        struct str          type_str;
+        struct Attribute    type_Attribute;
     }
 
-    %token <type_cstr> CSTR
-    %token <type_cstr> ELEMENT_NAME
-    %token <type_cstr> XML_ENCODING
-    %token <type_cstr> ELEMENT_TEXT
-    %token <type_float> XML_VERSION
+    %token <type_str>     ATTRIBUTE_VALUE
+    %token <type_str>     NAME                 // Element or attribute name.
 
-    %type <type_cstr> open_tag
-    %type <type_cstr> close_tag
+    // "K" means Keyword.
+    %token <type_cstr>     K_PROLOG_OPEN_BR
+    %token <type_cstr>     K_PROLOG_CLOSE_BR
+
+    %type <type_Attribute> attribute
 
 %% 
-    xml_file:   root_element
-            |   ' ' root_element
+    xml_file:   xml_prolog
+            |   ' ' xml_prolog
+            |   xml_file ' '
     ;
 
-    root_element:   element
-    ;
-
-    element_body:   ELEMENT_TEXT
-                |   element
-                |   element_body ELEMENT_TEXT
-                |   element_body element
-    ;
-
-    element:     open_tag close_tag
-                 {
-                    if(strcmp($1,$2))
-                    {
-                        printf("[E]: open_tag != close_tag\n");
-                        YYERROR;  
-                    }
-                 }
-           |     open_tag element_body close_tag    
-                 {
-                    if(strcmp($1,$3))
-                    {
-                        printf("[E]: open_tag != close_tag\n");
-                        YYERROR;  
-                    }
-                 }
-    ;                                                    
-
-    open_tag:   '<' ELEMENT_NAME '>'
+    xml_prolog: K_PROLOG_OPEN_BR _ NAME _ attribute _ attribute _ K_PROLOG_CLOSE_BR
                 {
-                    $$ = malloc(strlen($2) + 1);
-                    strcpy($$, $2);
+                    ValidateXmlProlog($3, $5, $7);
                 }
     ;
 
-    close_tag:  '<' '/' ELEMENT_NAME '>'
-                {
-                    $$ = malloc(strlen($3) + 1);
-                    strcpy($$, $3);
-                }
+    attribute: NAME _ '=' _ "'" ATTRIBUTE_VALUE "'"
+               {
+                $$.name = $1;
+                $$.value = $6;
+               }
+             | NAME _ '=' _ '"' ATTRIBUTE_VALUE '"'
+               {
+                $$.name = $1;
+                $$.value = $6;
+               }
+    ;
+
+    // White space
+    _:         /* empty */
+            |   ' '
     ;
    
 %% 
