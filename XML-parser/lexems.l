@@ -16,12 +16,7 @@
 
 	char Input();
 	void Unput(char c);
-
-	//int CountChar(char* str, char c);
-	//bool IsWhiteSpace(char* str);
-	//void Exit(int exitCode);
-
-	//void str_Init(str *, const char *);
+	void ReadComment();
 
 %}
 
@@ -29,9 +24,8 @@
 %x BODY
 %x DOUBLE_QUOTED
 %x SINGLE_QUOTED
-
-prologOpenBr	(\<\?)
-prologCloseBr	(\?\>)
+%x OPEN_TAG
+%x CLOSE_TAG
 
 digit				[0-9]
 float				{digit}+\.{digit}+
@@ -40,7 +34,8 @@ name				[a-zA-Z_]+[a-zA-Z_0-9\.-]*
 escapedCharacter	(&amp;|&lt;|&gt;|&quot;|&apos;) 
 singleQuotedText	({escapedCharacter}|[^<&'])*
 doubleQuotedText	({escapedCharacter}|[^<&"])*
-
+text (&amp;|&lt;|&gt;|&quot;|&apos;|[^<& \t\r\n])*
+commentOpenTag		\<!\-\-	
 %%
 
 <INITIAL>[^\<]+					{
@@ -79,37 +74,36 @@ doubleQuotedText	({escapedCharacter}|[^<&"])*
 									else
 									{
 										yy_push_state( BODY );
+										yy_push_state( OPEN_TAG );
+										return K_ELEM_OPEN_TAG_OPEN_BRACKET;
 									}
 								}
 
 <PROLOG>\?\>					{
+									yy_push_state( BODY );
 									return K_PROLOG_CLOSE_BR;
 								}
-<PROLOG>{whiteSpace}+	{
-									g_line += CountChar(yytext, '\n');
-									return ' ';
-								}
-<PROLOG>{name}					{
-									
-									str_Init( & yylval.type_str, yytext);
-									yylval.type_str.line = g_line;
-									return NAME;
-								}
-<PROLOG>[=]						{
-									return *yytext;
-								}
-<PROLOG>\"						{
-									yy_push_state( DOUBLE_QUOTED );	
-									return *yytext;
-								}
-<PROLOG>\"						{
-									yy_push_state( DOUBLE_QUOTED );	
-									return *yytext;
-								}
-<PROLOG>\'						{
-									yy_push_state( SINGLE_QUOTED );	
-									return *yytext;
-								}
+<PROLOG,OPEN_TAG,CLOSE_TAG,BODY>{whiteSpace}+	{
+													g_line += CountChar(yytext, '\n');
+													return ' ';
+												}
+<PROLOG,OPEN_TAG,CLOSE_TAG>{name}	{
+										str_Init( & yylval.type_str, yytext);
+										yylval.type_str.line = g_line;
+										return NAME;
+									}
+<PROLOG,OPEN_TAG,CLOSE_TAG>[=]			{
+											return *yytext;
+										}
+<PROLOG,OPEN_TAG,CLOSE_TAG>\"				{
+												yy_push_state( DOUBLE_QUOTED );	
+												return *yytext;
+											}
+
+<PROLOG,OPEN_TAG,CLOSE_TAG>\'				{
+												yy_push_state( SINGLE_QUOTED );	
+												return *yytext;
+											}
 
 <DOUBLE_QUOTED>\"					{
 										yy_pop_state();	
@@ -122,15 +116,46 @@ doubleQuotedText	({escapedCharacter}|[^<&"])*
 									}
 
 <SINGLE_QUOTED>\'					{
-										yy_pop_state();	
-										return *yytext;
+												yy_pop_state();	
+												return *yytext;
 									}
 <SINGLE_QUOTED>{singleQuotedText}	{
-										str_Init( & yylval.type_str, yytext);
-										yylval.type_str.line = g_line;
-										return ATTRIBUTE_VALUE;
+												str_Init( & yylval.type_str, yytext);
+												yylval.type_str.line = g_line;
+												return ATTRIBUTE_VALUE;
 									}								
 
+<OPEN_TAG,CLOSE_TAG>\>				{
+										yy_pop_state();	
+										return K_ELEM_TAG_CLOSE_BRACKET;
+									}
+<OPEN_TAG,CLOSE_TAG,PROLOG>:		{
+										return *yytext;
+									}
+
+<OPEN_TAG>\/\>						{
+										yy_pop_state();	
+										return K_ELEM_SELF_CLOSING_TAG;
+									}
+
+<BODY>\<							{
+										yy_push_state( OPEN_TAG );
+										return K_ELEM_OPEN_TAG_OPEN_BRACKET;
+									}
+<BODY>\<\/							{
+										yy_push_state( CLOSE_TAG );
+										return K_ELEM_CLOSE_TAG_OPEN_BRACKET;							
+									}
+<BODY>{text}						{
+										return ELEMENT_TEXT;
+									}
+<BODY>{commentOpenTag}				{
+										ReadComment();
+									}
+<PROLOG,BODY,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{commentOpenTag}		{
+																						printf("[E,%d]: Comments are allowed only inside of element body.\n", g_line);
+																						ReadComment();
+																					}
 
 %%
 
@@ -153,4 +178,33 @@ void Unput(char c)
 	}
 
 	unput( c );
+}
+
+void ReadComment()
+{
+	int commentStartLine = g_line;
+										
+	char c1 = 0, c2 = 0, c3 = 0;
+	char c;
+
+	while(1)
+	{
+		c = Input();
+		if(c == EOF)
+		{
+			printf("[E,%d]: Not closed comment detected.\n", commentStartLine);
+			Exit(-1);
+		}
+
+		c3 = c2;
+		c2 = c1;
+		c1 = c;
+
+		if( c1 == '>' &&
+			c2 == '-' && 
+			c3 == '-' )
+		{
+			break;
+		}
+	}
 }

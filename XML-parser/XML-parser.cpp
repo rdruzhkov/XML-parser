@@ -12,6 +12,8 @@ extern "C"
 
     extern int yyparse();
 
+    void Exit(int exitCode);
+
     void yyerror(const char* s)
     {
         printf("[E]: %s.\n", s);
@@ -30,10 +32,16 @@ int main(int argc, char ** argv)
 
     yyparse();
 
+    fclose(yyin);
+
     if (g_errorOccured)
     {
         printf("[E]: Syntax error(s) were spotted out.\n");
     }
+    else
+    {
+        printf("[I]: Document \"%s\" is valid.\n", argv[1]);
+    }
     
-    return 0;
+    Exit(1);
 }
