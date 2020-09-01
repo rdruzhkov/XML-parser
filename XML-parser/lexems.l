@@ -26,15 +26,16 @@
 %x SINGLE_QUOTED
 %x OPEN_TAG
 %x CLOSE_TAG
+%x EXPECTIN_ROOT
 
 digit				[0-9]
 float				{digit}+\.{digit}+
 whiteSpace			[ \t\r\n]
-name				[a-zA-Z_]+[a-zA-Z_0-9\.-]*
+name				[a-zA-Z_]+[:a-zA-Z_0-9\.-]*
 escapedCharacter	(&amp;|&lt;|&gt;|&quot;|&apos;) 
 singleQuotedText	({escapedCharacter}|[^<&'])*
 doubleQuotedText	({escapedCharacter}|[^<&"])*
-text (&amp;|&lt;|&gt;|&quot;|&apos;|[^<& \t\r\n])*
+text				(&amp;|&lt;|&gt;|&quot;|&apos;|[^<& \t\r\n])*
 commentOpenTag		\<!\-\-	
 %%
 
@@ -56,7 +57,7 @@ commentOpenTag		\<!\-\-
 						}
 
 						if(isTrash)
-							PrintError("[E]: Trash data in the beggining of the file, starts at line %d.\n", trashStartLine);
+							PrintError("[E,%d]: Trash data in the beggining of the file.\n", trashStartLine);
 					}	
 <INITIAL>\<			{
 						char c = Input();
@@ -72,7 +73,9 @@ commentOpenTag		\<!\-\-
 							return K_PROLOG_OPEN_BR;
 						}
 						else
-						{
+						{	
+							Unput( c );
+
 							yy_push_state( BODY );
 							yy_push_state( OPEN_TAG );
 							return K_ELEM_OPEN_TAG_OPEN_BRACKET;
@@ -158,10 +161,10 @@ commentOpenTag		\<!\-\-
 														return ' ';
 													}
 
-<PROLOG,BODY,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{commentOpenTag}		{
-																						PrintError("[E,%d]: Comments are allowed only inside of element body.\n", g_line);
-																						ReadComment();
-																					}
+<INITIAL,PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{commentOpenTag}		{
+																				PrintError("[E,%d]: Comments are allowed only inside of element body or just after prologue.\n", g_line);
+																				ReadComment();
+																			}
 
 %%
 

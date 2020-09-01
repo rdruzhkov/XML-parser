@@ -16,4 +16,4 @@ extern "C" bool IsWhiteSpace(char* str);
 
 extern "C" void Exit(int exitCode);
 
-extern "C" void ValidateXmlProlog(Name xml_keyword, Attribute _1st_attribute, Attribute _2d_attribute);
+extern "C" void ValidateXmlProlog(str xml_keyword, Attribute _1st_attribute, Attribute _2d_attribute);
