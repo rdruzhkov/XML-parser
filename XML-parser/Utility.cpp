@@ -4,10 +4,22 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
+#include <stdarg.h>
+#include <string.h>
 
 #include "C_Structs.h"
 
+#include "Utility.h"
 using namespace std;
+
+extern "C" void PrintError(char const* const _Format, ...)
+{
+	va_list args;
+	va_start(args, _Format);
+	vfprintf(stderr, _Format, args);
+
+	g_errorOccured = true;
+}
 
 extern "C" int CountChar(char* str, char c)
 {
@@ -42,7 +54,7 @@ extern "C" bool IsWhiteSpace(char* str)
 
 extern "C" void Exit(int exitCode)
 {
-	printf("[I]: Exiting parser. Press any key to continue...");
+	printf("[I]: Exiting parser. Press any key to continue...\n");
 	_getch();
 	exit(exitCode);
 }
@@ -63,42 +75,42 @@ extern "C" void ValidateXmlProlog( Name xml_keyword, Attribute _1st_attribute, A
 	int line = xml_keyword.name.line;
 
 	if (xmlKeyWord != "xml")
-	{
-		printf("[E,%d]: XML prolog starts not with \"xml\" keyword.\n", xml_keyword.name.line);
+	{	
+		PrintError("[E,%d]: XML prolog starts not with \"xml\" keyword.\n", xml_keyword.name.line);
 	}
 	else if (xmlKeyWordNamespace != "")
 	{
-		printf("[E,%d]: \"xml\" keyword can't have namespaces.\n", xml_keyword._namespace.line);
+		PrintError("[E,%d]: \"xml\" keyword can't have namespaces.\n", xml_keyword._namespace.line);
 	}
 
 	if (_1stAttributeName != "version")
 	{
-		printf("[E,%d]: XML prolog 1st atribute must be \"version\".\n", _1st_attribute.name.name.line);
+		PrintError("[E,%d]: XML prolog 1st atribute must be \"version\".\n", _1st_attribute.name.name.line);
 	}
 	else if (_1stAttributeValue != "1.0")
 	{
-		printf("[E,%d]: XML prolog incorrect version number. Only \"1.0\" is supported.\n", _1st_attribute.value.line);
+		PrintError("[E,%d]: XML prolog incorrect version number. Only \"1.0\" is supported.\n", _1st_attribute.value.line);
 	}
 	else if (_1stAttributeNameNamespace != "")
 	{
-		printf("[E,%d]: XML prolog \"version\" atribute can't have namespace.\n", _1st_attribute.name._namespace.line);
+		PrintError("[E,%d]: XML prolog \"version\" atribute can't have namespace.\n", _1st_attribute.name._namespace.line);
 	}
 
 	if (_2dAttributeName != "encoding")
 	{
-		printf("[E,%d]: XML prolog 2d attribute must be \"encoding\".\n", _2d_attribute.name.name.line);
+		PrintError("[E,%d]: XML prolog 2d attribute must be \"encoding\".\n", _2d_attribute.name.name.line);
 	}
-	else if ( _2dAttributeValue != "ASCII" &&
-			  _2dAttributeValue != "Windows-1252" && 
-			  _2dAttributeValue != "UTF-8" && 
-			  _2dAttributeValue != "ISO-8859-1" )
+	else if ( _strcmpi(_2dAttributeValue.c_str(), "ASCII") != 0		  &&
+			  _strcmpi(_2dAttributeValue.c_str(), "Windows-1252") != 0 &&
+			  _strcmpi(_2dAttributeValue.c_str(), "UTF-8") != 0		  &&
+			  _strcmpi(_2dAttributeValue.c_str(), "ISO-8859-1") != 0 )
 	{
-		printf("[E,%d]: XML prolog incorrect encoding value. Supported encodings are: \"ASCII\", \
+		PrintError("[E,%d]: XML prolog incorrect encoding value. Supported encodings are: \"ASCII\", \
 \"Windows-1252\", \"UTF-8\", \"ISO-8859-1\".\n", _2d_attribute.value.line);
 	}
 	else if (_2dAttributeNameNamespace != "")
 	{
-		printf("[E,%d]: XML prolog \"encoding\" atribute can't have namespace.\n", _2d_attribute.name._namespace.line);
+		PrintError("[E,%d]: XML prolog \"encoding\" atribute can't have namespace.\n", _2d_attribute.name._namespace.line);
 	}
 
 }

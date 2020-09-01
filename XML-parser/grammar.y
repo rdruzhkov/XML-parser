@@ -70,7 +70,7 @@
               | attributes attribute
     ;
 
-    attribute: _ name _ '=' _ "'" ATTRIBUTE_VALUE "'"
+    attribute: _ name _ '=' _ '\'' ATTRIBUTE_VALUE '\''
                {
                 $$.name = $2;
                 $$.value = $7;

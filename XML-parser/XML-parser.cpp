@@ -1,13 +1,18 @@
 
 #include <stdio.h>
+#include <string>
 
 #include "C_Structs.h"
 #include "y.tab.h"
+
+using namespace std;
 
 bool g_errorOccured = false;
 
 extern "C"
 {
+    extern int g_line;
+
     extern FILE* yyin;
 
     extern int yyparse();
@@ -16,18 +21,20 @@ extern "C"
 
     void yyerror(const char* s)
     {
-        printf("[E]: %s.\n", s);
+        printf("[E,%d]: %s.\n", g_line, s);
         g_errorOccured = true;
     }
 }
 
 int main(int argc, char ** argv)
 {
-    errno_t error = fopen_s (&yyin, argv[1], "r");
+    char* fileToParse = argv[1];
+
+    errno_t error = fopen_s(&yyin, fileToParse, "r");
     if (error != 0)
     {
-        printf("[E]: Can't open file: %s\n", argv[1]);
-        return -1;
+        printf("[E]: Can't open file: %s\n", fileToParse);
+        return false;
     }
 
     yyparse();
@@ -36,12 +43,12 @@ int main(int argc, char ** argv)
 
     if (g_errorOccured)
     {
-        printf("[E]: Syntax error(s) were spotted out.\n");
+        printf("[E]: Document \"%s\" is not valid.\n", fileToParse);
+        Exit(-1);
     }
     else
     {
-        printf("[I]: Document \"%s\" is valid.\n", argv[1]);
-    }
-    
-    Exit(1);
+        printf("[I]: Document \"%s\" is valid.\n", fileToParse);
+        Exit(1);
+    } 
 }
