@@ -32,62 +32,87 @@
     %type <type_Attribute> attribute
 
 %% 
-    xml_file:   element _
-            |   xml_prolog element _
+    xml_file:   element 
+            |   xml_prolog element 
+            |   element close_tags
+            {
+                PrintError("[E] element close_tags.\n");
+            }
+            |   xml_prolog element close_tags
+            {
+                PrintError("[E]  xml_prolog element close_tags.\n");
+            }
+            |   close_tags
+            {
+                PrintError("[E] close_tags.\n");
+            }
     ;
 
-    xml_prolog: _ K_PROLOG_OPEN_BR _ NAME attribute attribute _ K_PROLOG_CLOSE_BR
+    xml_prolog: K_PROLOG_OPEN_BR NAME attribute attribute K_PROLOG_CLOSE_BR
                 {
-                    ValidateXmlProlog($4, $5, $6);
+                    ValidateXmlProlog($2, $3, $4);
                 }
     ;
 
     element:    self_closing_tag
            |    open_tag close_tag
-           |    open_tag element_body close_tag    
+           |    open_tag element_body close_tag  
+           |    open_tag error
+                {
+                    PrintError("[E] open_tag error.\n");
+                    yyerrok;
+                }
+           |    open_tag element_body error
+                {
+                    PrintError("[E] open_tag error.\n");
+                    yyerrok;
+                }
     ;
 
-    element_body:   _ ELEMENT_TEXT
+    element_body:   ELEMENT_TEXT
                 |   element
-                |   element_body _ ELEMENT_TEXT
+                |   element_body  ELEMENT_TEXT
                 |   element_body element 
     ;
 
-    self_closing_tag:   _ K_ELEM_OPEN_TAG_OPEN_BRACKET NAME _ K_ELEM_SELF_CLOSING_TAG
-                    |   _ K_ELEM_OPEN_TAG_OPEN_BRACKET NAME attributes _ K_ELEM_SELF_CLOSING_TAG
+    self_closing_tag:    K_ELEM_OPEN_TAG_OPEN_BRACKET NAME K_ELEM_SELF_CLOSING_TAG
+                    |    K_ELEM_OPEN_TAG_OPEN_BRACKET NAME attributes K_ELEM_SELF_CLOSING_TAG
     ;
 
-    open_tag:   _ K_ELEM_OPEN_TAG_OPEN_BRACKET NAME _ K_ELEM_TAG_CLOSE_BRACKET
-            |   _ K_ELEM_OPEN_TAG_OPEN_BRACKET NAME attributes _ K_ELEM_TAG_CLOSE_BRACKET
+    open_tag:    K_ELEM_OPEN_TAG_OPEN_BRACKET NAME K_ELEM_TAG_CLOSE_BRACKET
+                {
+                    AddToTagList($2, Open);
+                }
+            |    K_ELEM_OPEN_TAG_OPEN_BRACKET NAME attributes K_ELEM_TAG_CLOSE_BRACKET
+                {
+                    AddToTagList($2, Open);
+                }
     ;
 
-    close_tag:  _ K_ELEM_CLOSE_TAG_OPEN_BRACKET NAME _ K_ELEM_TAG_CLOSE_BRACKET
+    close_tag:  K_ELEM_CLOSE_TAG_OPEN_BRACKET NAME K_ELEM_TAG_CLOSE_BRACKET
+                {
+                    AddToTagList($2, Close);
+                }
+
+    close_tags:  close_tag
+              |  close_tags close_tag
     ;
 
     attributes: attribute
               | attributes attribute
     ;
 
-    attribute: _ NAME _ '=' _ '\'' ATTRIBUTE_VALUE '\''
+    attribute:  NAME '=' '\'' ATTRIBUTE_VALUE '\''
                {
-                $$.name = $2;
-                $$.value = $7;
+                $$.name = $1;
+                $$.value = $4;
                }
-             | _ NAME _ '=' _ '"' ATTRIBUTE_VALUE '"'
+             |  NAME '=' '"' ATTRIBUTE_VALUE '"'
                {
-                $$.name = $2;
-                $$.value = $7;
+                $$.name = $1;
+                $$.value = $4;
                }
     ;
-
-    // White space
-    _:         /* empty */
-            |   spaces
-    ;
-
-    spaces: ' '
-          | spaces ' '
-    ;
-   
+ 
 %% 
 

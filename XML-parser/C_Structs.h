@@ -1,5 +1,11 @@
 #pragma once
 
+enum TagType
+{
+	Open,
+	Close
+};
+
 struct str
 {
 	void * p_string;

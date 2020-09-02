@@ -1,13 +1,17 @@
 
 #include <stdio.h>
 #include <string>
+#include <list>
 
 #include "C_Structs.h"
+#include "Utility.h"    
 #include "y.tab.h"
 
 using namespace std;
 
 bool g_errorOccured = false;
+
+list<Tag> tags;
 
 extern "C"
 {
@@ -38,8 +42,9 @@ int main(int argc, char ** argv)
     }
 
     yyparse();
-
     fclose(yyin);
+
+    ValidateTagsNesting(tags);
 
     if (g_errorOccured)
     {

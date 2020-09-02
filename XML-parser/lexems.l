@@ -12,6 +12,8 @@
 	#define fileno _fileno
 
 	int g_line = 1;
+	int commentStartLine;
+	int cdataStartLine;
 	int prevState;
 
 	char Input();
@@ -26,17 +28,21 @@
 %x SINGLE_QUOTED
 %x OPEN_TAG
 %x CLOSE_TAG
-%x EXPECTIN_ROOT
+%x EXPECTING_ROOT
+%x COMMENT
+%x CDATA
+
 
 digit				[0-9]
 float				{digit}+\.{digit}+
 whiteSpace			[ \t\r\n]
-name				[a-zA-Z_]+[:a-zA-Z_0-9\.-]*
+name				[a-zA-Z_]+[:a-zA-Z_0-9\.\-]*
 escapedCharacter	(&amp;|&lt;|&gt;|&quot;|&apos;) 
 singleQuotedText	({escapedCharacter}|[^<&'])*
 doubleQuotedText	({escapedCharacter}|[^<&"])*
 text				(&amp;|&lt;|&gt;|&quot;|&apos;|[^<& \t\r\n])*
 commentOpenTag		\<!\-\-	
+cdataOpenTag		\<\!\[CDATA\[	
 %%
 
 <INITIAL>[^\<]+		{
@@ -75,15 +81,25 @@ commentOpenTag		\<!\-\-
 						else
 						{	
 							Unput( c );
+							Unput( '<' );
+							yy_push_state( EXPECTING_ROOT );
+						}
+					}
 
+<EXPECTING_ROOT>\<		{
 							yy_push_state( BODY );
 							yy_push_state( OPEN_TAG );
 							return K_ELEM_OPEN_TAG_OPEN_BRACKET;
 						}
-					}
+<EXPECTING_ROOT>\<\?	{
+							// ...................
+						}
+<EXPECTING_ROOT>\<\!	{
+							// ...................
+						}
 
 <PROLOG>\?\>		{
-						yy_push_state( BODY );
+						yy_push_state( EXPECTING_ROOT );
 						return K_PROLOG_CLOSE_BR;
 					}
 
@@ -106,12 +122,15 @@ commentOpenTag		\<!\-\-
 											yylval.type_str.line = g_line;
 											return ATTRIBUTE_VALUE;
 										}	
-
+<BODY>{cdataOpenTag}			{
+									cdataStartLine = g_line;
+									yy_push_state( CDATA );
+								}
 <BODY>\<						{
 									yy_push_state( OPEN_TAG );
 									return K_ELEM_OPEN_TAG_OPEN_BRACKET;
 								}
-<BODY>\<\/						{
+<BODY,EXPECTING_ROOT>\<\/		{
 									yy_push_state( CLOSE_TAG );
 									return K_ELEM_CLOSE_TAG_OPEN_BRACKET;							
 								}
@@ -121,32 +140,55 @@ commentOpenTag		\<!\-\-
 <BODY>&							{
 									PrintError("[E,%d]: \"&\" is not escaped or is part of not existing escape sequence.\n", g_line);
 								}
-<BODY>{commentOpenTag}			{
-									ReadComment();
-								}
+
+<CDATA>[^\]]			{;}	
+<CDATA>\]\]				{;}
+<CDATA>\]				{;}
+<CDATA><<EOF>>			{
+							PrintError("[E,%d]: Not closed CDATA section detected.\n", cdataStartLine);
+							Exit(-1);
+						}
+<CDATA>\]\]\>			{
+							yy_pop_state();
+						}
 
 <OPEN_TAG>\/\>			{
 							yy_pop_state();	
 							return K_ELEM_SELF_CLOSING_TAG;
 						}
 
+<COMMENT>\-\-			{
+							PrintError("[E,%d]: The string \"--\" is not permitted within comments.\n", g_line);
+							Unput('-');
+						}
+<COMMENT><<EOF>>		{	
+							PrintError("[E,%d]: Not closed comment detected.\n", commentStartLine);
+							Exit(-1);
+						}
+<COMMENT>\-\-\>			{
+							yy_pop_state();
+						}
+<COMMENT>[^\-]			{;}
+<COMMENT>\-				{;}
+
+<EXPECTING_ROOT,BODY>{commentOpenTag}			{
+													commentStartLine = g_line;
+													yy_push_state( COMMENT );
+												}
+
 <OPEN_TAG,CLOSE_TAG>\>			{
 									yy_pop_state();	
 									return K_ELEM_TAG_CLOSE_BRACKET;
 								}
 
-<OPEN_TAG,CLOSE_TAG,PROLOG>:		{
-										return *yytext;
-									}
+<OPEN_TAG,CLOSE_TAG,PROLOG>:		{ return *yytext; }
 
 <PROLOG,OPEN_TAG,CLOSE_TAG>{name}		{
 											str_Init( & yylval.type_str, yytext);
 											yylval.type_str.line = g_line;
 											return NAME;
 										}
-<PROLOG,OPEN_TAG,CLOSE_TAG>[=]			{
-											return *yytext;
-										}
+<PROLOG,OPEN_TAG,CLOSE_TAG>[=]			{ return *yytext; }
 <PROLOG,OPEN_TAG,CLOSE_TAG>\"			{
 											yy_push_state( DOUBLE_QUOTED );	
 											return *yytext;
@@ -156,15 +198,20 @@ commentOpenTag		\<!\-\-
 											return *yytext;
 										}
 
-<PROLOG,OPEN_TAG,CLOSE_TAG,BODY>{whiteSpace}+		{
-														g_line += CountChar(yytext, '\n');
-														return ' ';
-													}
+<CDATA,EXPECTING_ROOT,COMMENT,PROLOG,OPEN_TAG,CLOSE_TAG,BODY>{whiteSpace}+		{
+																					g_line += CountChar(yytext, '\n');
+																				}
 
-<INITIAL,PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{commentOpenTag}		{
-																				PrintError("[E,%d]: Comments are allowed only inside of element body or just after prologue.\n", g_line);
-																				ReadComment();
-																			}
+<PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{commentOpenTag}		{
+																						commentStartLine = g_line;
+																						PrintError("[E,%d]: Comments are allowed only inside of element body or just after prologue.\n", g_line);
+																						yy_push_state( COMMENT );
+																					}
+<INITIAL,EXPECTING_ROOT,PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{cdataOpenTag}		{
+																										cdataStartLine = g_line;
+																										PrintError("[E,%d]: CDATA sections are allowed only inside of element body.\n", g_line);
+																										yy_push_state( CDATA );
+																									}
 
 %%
 
@@ -187,33 +234,4 @@ void Unput(char c)
 	}
 
 	unput( c );
-}
-
-void ReadComment()
-{
-	int commentStartLine = g_line;
-										
-	char c1 = 0, c2 = 0, c3 = 0;
-	char c;
-
-	while(1)
-	{
-		c = Input();
-		if(c == EOF)
-		{
-			PrintError("[E,%d]: Not closed comment detected.\n", commentStartLine);
-			return EOF;
-		}
-
-		c3 = c2;
-		c2 = c1;
-		c1 = c;
-
-		if( c1 == '>' &&
-			c2 == '-' && 
-			c3 == '-' )
-		{
-			break;
-		}
-	}
 }
