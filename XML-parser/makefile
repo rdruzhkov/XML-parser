@@ -1,9 +1,15 @@
 
+.PHONY: test all clean
+
 OBJECTS= C_str.o C_Attributes.o Utility.o  y.tab.o lex.yy.o XML-parser.o
 
 all: y.tab.c lex.yy.c $(OBJECTS) 
 	gcc  $(OBJECTS) -lstdc++ -o XML-parser.out
 	cp XML-parser.out ../Tests/XML-parser.out
+
+test: clean all
+	chmod +x ../Tests/run.sh
+	cd ../Tests/ && ./run.sh
 	
 .c.o:
 	gcc -c -Wall $< -o $@	

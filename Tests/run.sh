@@ -1,3 +1,5 @@
+echo "\nStarting testing...\n"
+
 ./XML-parser.out test_1_ok.xml
 ./XML-parser.out test_2_ok.xml
 ./XML-parser.out test_3_ok.xml
@@ -12,3 +14,5 @@
 ./XML-parser.out test_12_fail.xml
 ./XML-parser.out test_13_fail.xml
 ./XML-parser.out test_14_ok.xml
+
+echo "Tests are completed.\n"
