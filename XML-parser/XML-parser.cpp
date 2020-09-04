@@ -40,7 +40,7 @@ int main(int argc, char ** argv)
 {
     if (argc != 2)
     {
-        printf("[E]: File path not specified.\n", fileToParse.c_str());
+        printf("[E]: File path not specified.\n");
         Exit(-1);
     }
 
