@@ -1,0 +1,14 @@
+./XML-parser.exe test_1_ok.xml
+./XML-parser.exe test_2_ok.xml
+./XML-parser.exe test_3_ok.xml
+./XML-parser.exe test_4_ok.xml
+./XML-parser.exe test_5_fail.xml
+./XML-parser.exe test_6_ok.xml
+./XML-parser.exe test_7_ok.xml
+./XML-parser.exe test_8_ok.xml
+./XML-parser.exe test_9_ok.xml
+./XML-parser.exe test_10_fail.xml
+./XML-parser.exe test_11_fail.xml
+./XML-parser.exe test_12_fail.xml
+./XML-parser.exe test_13_fail.xml
+./XML-parser.exe test_14_ok.xml

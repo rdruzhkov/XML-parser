@@ -341,3 +341,4 @@ healthchecksdb
 
 lex.yy.c
 y.*
+*.exe

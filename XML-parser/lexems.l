@@ -6,20 +6,21 @@
 	#include <stdbool.h> 
 	#include <stdlib.h>
 
-	#include "C_Structs.h"
+	#include "C_str.h"
+    #include "C_Attribute.h"
+	#include "C_Attributes.h"
+	#include "TagType.h"
 	#include "y.tab.h"
-
-	#define fileno _fileno
 
 	int g_line = 1;
 	int commentStartLine;
 	int cdataStartLine;
-	int prevState;
 
 	char Input();
 	void Unput(char c);
-	void ReadComment();
-
+#ifndef unix
+	#define fileno _fileno
+#endif
 %}
 
 %x PROLOG
@@ -91,12 +92,6 @@ cdataOpenTag		\<\!\[CDATA\[
 							yy_push_state( OPEN_TAG );
 							return K_ELEM_OPEN_TAG_OPEN_BRACKET;
 						}
-<EXPECTING_ROOT>\<\?	{
-							// ...................
-						}
-<EXPECTING_ROOT>\<\!	{
-							// ...................
-						}
 
 <PROLOG>\?\>		{
 						yy_push_state( EXPECTING_ROOT );
@@ -108,8 +103,8 @@ cdataOpenTag		\<\!\[CDATA\[
 											return *yytext;
 										}
 <DOUBLE_QUOTED>{doubleQuotedText}		{
-											str_Init( & yylval.type_str, yytext);
-											yylval.type_str.line = g_line;
+											str_Init( & yylval.type_C_str, yytext);
+											yylval.type_C_str.line = g_line;
 											return ATTRIBUTE_VALUE;
 										}
 
@@ -118,22 +113,23 @@ cdataOpenTag		\<\!\[CDATA\[
 											return *yytext;
 										}
 <SINGLE_QUOTED>{singleQuotedText}		{
-											str_Init( & yylval.type_str, yytext);
-											yylval.type_str.line = g_line;
+											str_Init( & yylval.type_C_str, yytext);
+											yylval.type_C_str.line = g_line;
 											return ATTRIBUTE_VALUE;
 										}	
 <BODY>{cdataOpenTag}			{
 									cdataStartLine = g_line;
 									yy_push_state( CDATA );
 								}
-<BODY>\<						{
+<BODY,OPEN_TAG,CLOSE_TAG>\<		{
+									yy_push_state( BODY );
 									yy_push_state( OPEN_TAG );
 									return K_ELEM_OPEN_TAG_OPEN_BRACKET;
 								}
-<BODY,EXPECTING_ROOT>\<\/		{
-									yy_push_state( CLOSE_TAG );
-									return K_ELEM_CLOSE_TAG_OPEN_BRACKET;							
-								}
+<BODY,EXPECTING_ROOT,OPEN_TAG,CLOSE_TAG>\<\/		{
+														yy_push_state( CLOSE_TAG );
+														return K_ELEM_CLOSE_TAG_OPEN_BRACKET;							
+													}
 <BODY>{text}					{
 									return ELEMENT_TEXT;
 								}
@@ -184,8 +180,8 @@ cdataOpenTag		\<\!\[CDATA\[
 <OPEN_TAG,CLOSE_TAG,PROLOG>:		{ return *yytext; }
 
 <PROLOG,OPEN_TAG,CLOSE_TAG>{name}		{
-											str_Init( & yylval.type_str, yytext);
-											yylval.type_str.line = g_line;
+											str_Init( & yylval.type_C_str, yytext);
+											yylval.type_C_str.line = g_line;
 											return NAME;
 										}
 <PROLOG,OPEN_TAG,CLOSE_TAG>[=]			{ return *yytext; }
@@ -203,15 +199,19 @@ cdataOpenTag		\<\!\[CDATA\[
 																				}
 
 <PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{commentOpenTag}		{
-																						commentStartLine = g_line;
-																						PrintError("[E,%d]: Comments are allowed only inside of element body or just after prologue.\n", g_line);
-																						yy_push_state( COMMENT );
-																					}
+																				commentStartLine = g_line;
+																				PrintError("[E,%d]: Comments are allowed only inside of element body or just after prologue.\n", g_line);
+																				yy_push_state( COMMENT );
+																			}
 <INITIAL,EXPECTING_ROOT,PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG>{cdataOpenTag}		{
 																										cdataStartLine = g_line;
 																										PrintError("[E,%d]: CDATA sections are allowed only inside of element body.\n", g_line);
 																										yy_push_state( CDATA );
 																									}
+
+<PROLOG,BODY,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG,EXPECTING_ROOT,COMMENT,CDATA>.	{
+																								PrintError("[E,%d]: Wrong place for symbol \"%c\".\n", g_line, *yytext);
+																							}
 
 %%
 

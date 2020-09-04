@@ -1,17 +1,34 @@
 
+#ifndef unix
+	#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <string>
 #include <utility>
 
-#include <stdio.h>
+#ifndef unix
 #include <conio.h>
+#endif
+#include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
 
-#include "C_Structs.h"
-#include "Utility.h"
+#include "C_str.h"
+#include "C_Attributes.h"
+#include "TagType.h"
+#include "Utility.hpp"
+
+#include "Attribute.hpp"
+
+#ifdef unix
+	#define _stricmp strcasecmp
+#endif
 
 using namespace std;
+
+extern string fileToParse;
+extern bool g_unknownSyntaxErrorOccured;
 
 extern "C" void PrintError(char const* const _Format, ...)
 {
@@ -55,49 +72,37 @@ extern "C" bool IsWhiteSpace(char* str)
 
 extern "C" void Exit(int exitCode)
 {
+	int _exitCode = exitCode;
+
+	if (g_errorOccured)
+	{
+		printf("[E]: Document \"%s\" is not valid.\n", fileToParse.c_str());
+
+		if (g_unknownSyntaxErrorOccured)
+		{
+			printf("[E]: Unknown syntax error(s) ocured.\n");
+		}
+
+		_exitCode = -1;
+	}
+	else
+	{
+		printf("[I]: Document \"%s\" is valid.\n", fileToParse.c_str());
+	}
+
+#ifndef unix
 	printf("[I]: Exiting parser. Press any key to continue...\n\n");
 	_getch();
-	exit(exitCode);
+#else
+	printf("\n");
+#endif
+
+	exit(_exitCode);
 }
 
-extern "C" void ValidateXmlProlog( str xml_keyword, Attribute _1st_attribute, Attribute _2d_attribute )
+extern "C" void PrintStr(C_str s)
 {
-	string xmlKeyWord( * reinterpret_cast<string*>(xml_keyword.p_string));
-
-	string _1stAttributeName( * reinterpret_cast<string*>(_1st_attribute.name.p_string));
-	string _1stAttributeValue( * reinterpret_cast<string*>(_1st_attribute.value.p_string));
-
-	string _2dAttributeName( * reinterpret_cast<string*>(_2d_attribute.name.p_string));
-	string _2dAttributeValue( * reinterpret_cast<string*>(_2d_attribute.value.p_string));
-
-	int line = xml_keyword.line;
-
-	if (xmlKeyWord != "xml")
-	{	
-		PrintError("[E,%d]: XML prolog starts not with \"xml\" keyword.\n", xml_keyword.line);
-	}
-
-	if (_1stAttributeName != "version")
-	{
-		PrintError("[E,%d]: XML prolog 1st atribute must be \"version\".\n", _1st_attribute.name.line);
-	}
-	else if (_1stAttributeValue != "1.0")
-	{
-		PrintError("[E,%d]: XML prolog incorrect version number. Only \"1.0\" is supported.\n", _1st_attribute.value.line);
-	}
-
-	if (_2dAttributeName != "encoding")
-	{
-		PrintError("[E,%d]: XML prolog 2d attribute must be \"encoding\".\n", _2d_attribute.name.line);
-	}
-	else if ( _strcmpi(_2dAttributeValue.c_str(), "ASCII") != 0		  &&
-			  _strcmpi(_2dAttributeValue.c_str(), "Windows-1252") != 0 &&
-			  _strcmpi(_2dAttributeValue.c_str(), "UTF-8") != 0		  &&
-			  _strcmpi(_2dAttributeValue.c_str(), "ISO-8859-1") != 0 )
-	{
-		PrintError("[E,%d]: XML prolog incorrect encoding value. Supported encodings are: \"ASCII\", \
-\"Windows-1252\", \"UTF-8\", \"ISO-8859-1\".\n", _2d_attribute.value.line);
-	}
+	printf("%s", reinterpret_cast<string*>(s.p_string)->c_str());
 }
 
 bool Tag::isPair(const Tag & other)
@@ -137,7 +142,7 @@ int Tag::Line()
 	return this->line;
 }
 
-extern "C" void AddToTagList(str name, TagType type)
+extern "C" void AddToTagList(C_str name, TagType type)
 {
 	tags.push_back(Tag( * reinterpret_cast<string*>(name.p_string), 
 						type, name.line));
@@ -310,7 +315,7 @@ list<Tag>::iterator FindOpenTagPair(list<Tag>::iterator openTagIt, list<Tag>& ta
 {
 	if (openTagIt == tags.end())
 	{
-		tags.end();
+		return tags.end();
 	}
 
 	auto it = openTagIt;
@@ -329,6 +334,11 @@ list<Tag>::iterator FindOpenTagPair(list<Tag>::iterator openTagIt, list<Tag>& ta
 	}
 
 	return tags.end();
+}
+
+extern "C" bool ValidateName(C_str name)
+{
+	return ValidateName( * reinterpret_cast<string *>(name.p_string), name.line);
 }
 
 void ValidateTagsNesting(list<Tag> & tags)
@@ -353,7 +363,7 @@ void ValidateTagsNesting(list<Tag> & tags)
 			auto closeTagIt = FindOpenTagPair(improperlyNestedOpenTagIt, tags);
 			if (closeTagIt == tags.end())
 			{
-				PrintError("[E,%d]: Not closed open tag \"%s\".\n", (*improperlyNestedOpenTagIt).Line(), (*improperlyNestedOpenTagIt).Name().c_str());
+				PrintError("[E,%d]: Open tag of element \"%s\" have no pair.\n", (*improperlyNestedOpenTagIt).Line(), (*improperlyNestedOpenTagIt).Name().c_str());
 				tags.erase(improperlyNestedOpenTagIt);	
 			}
 			else
@@ -367,7 +377,7 @@ void ValidateTagsNesting(list<Tag> & tags)
 				}
 				else
 				{
-					PrintError("[E,%d]: Not closed close tag \"%s\".\n", (*pair.second).Line(), (*pair.second).Name().c_str());
+					PrintError("[E,%d]: Close tag of element \"%s\" have no pair.\n", (*pair.second).Line(), (*pair.second).Name().c_str());
 					tags.erase(pair.second);
 				}
 			}
@@ -385,7 +395,7 @@ void ValidateTagsNesting(list<Tag> & tags)
 			auto openTagIt = FindCloseTagPair(improperlyNestedCloseTagIt, tags);
 			if (openTagIt == tags.end())
 			{
-				PrintError("[E,%d]: Not closed close tag \"%s\".\n", (*improperlyNestedCloseTagIt).Line(), (*improperlyNestedCloseTagIt).Name().c_str());
+				PrintError("[E,%d]: Close tag of element \"%s\" have no pair.\n", (*improperlyNestedCloseTagIt).Line(), (*improperlyNestedCloseTagIt).Name().c_str());
 				tags.erase(improperlyNestedCloseTagIt);
 			}
 			else
@@ -399,10 +409,103 @@ void ValidateTagsNesting(list<Tag> & tags)
 				}
 				else
 				{
-					PrintError("[E,%d]: Not closed open tag \"%s\".\n", (*pair.second).Line(), (*pair.second).Name().c_str());
+					PrintError("[E,%d]: Open tag of element \"%s\" have no pair.\n", (*pair.second).Line(), (*pair.second).Name().c_str());
 					tags.erase(pair.second);
 				}
 			}
 		}
 	}
 }
+
+bool ValidateName(string name, int line)
+{
+	if (name.size() < 3)
+	{
+		return true;
+	}
+
+	char _1st_3_chars[4] = { 0 };
+	strncpy(_1st_3_chars, name.c_str(), 3);
+
+	if (_stricmp(_1st_3_chars, "xml") == 0)
+	{
+		PrintError("[E,%d]: name \"%s\" contains \"[xX][mM][lL]\" pattern in the beggining of the string.\n", line, name.c_str());
+		return false;
+	}
+
+	return false;
+}
+
+bool ValidateAtrributeList(list<Attribute> & attributes)
+{
+	bool errorOccured = false;
+
+	for (auto& attribute : attributes)
+	{
+		if (!ValidateName(attribute.name(), attribute.nameLine()))
+		{
+			errorOccured = true;
+		}
+	}
+
+	return errorOccured;
+}
+
+extern "C" bool ValidateProlog(C_str _name, C_Attributes * c_attributes)
+{
+	string& name = *reinterpret_cast<string*>(_name.p_string);
+	int nameLine = _name.line;
+	list<Attribute> & attributes = *reinterpret_cast<list<Attribute>*>(c_attributes->p_list);
+
+	bool errorOccured = false;
+
+	if (attributes.size() > 2)
+	{
+		PrintError("[E,%d]: Prolog can contain only \"version\" and \"encoding\".\n", nameLine);
+		return false;
+	}
+
+	if (name != "xml")
+	{
+		PrintError("[E,%d]: Prolog must start with xml word.\n", nameLine);
+		errorOccured = true;
+	}
+
+	auto it = attributes.begin();
+
+	if ((*it).name() != "version")
+	{
+		PrintError("[E,%d]: Prolog 1st attribute should be \"version\".\n", (*it).nameLine());
+		errorOccured = true;
+	}
+	else if ((*it).value() != "1.0")
+	{
+		PrintError("[E,%d]: Prolog \"version\" attribute can only contain \"1.0\".\n", (*it).valueLine());
+		errorOccured = true;
+	}
+
+	it++;
+	if (it == attributes.end())
+	{
+		return errorOccured;
+	}
+
+	if ((*it).name() != "encoding")
+	{
+		PrintError("[E,%d]: Prolog 2d attribute should be \"encoding\".\n", (*it).nameLine());
+		errorOccured = true;
+	}
+	else if (_stricmp((*it).value().c_str(), "ASCII") != 0 &&
+			_stricmp((*it).value().c_str(), "Windows-1252") != 0 &&
+			_stricmp((*it).value().c_str(), "UTF-8") != 0 &&
+			_stricmp((*it).value().c_str(), "ISO-8859-1") != 0)
+	{
+		PrintError("[E,%d]: Prolog \"encoding\" attribute can only contain \"ASCII\", \
+\"Windows-1252\", \"UTF-8\", \"ISO-8859-1\" in any case.\n", (*it).valueLine());
+
+		errorOccured = true;
+	}
+
+	return errorOccured;
+}
+

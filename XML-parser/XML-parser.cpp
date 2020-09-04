@@ -1,17 +1,22 @@
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string>
 #include <list>
 
-#include "C_Structs.h"
-#include "Utility.h"    
-#include "y.tab.h"
+#include "TagType.h"
+#include "Utility.hpp"    
 
 using namespace std;
 
 bool g_errorOccured = false;
 
+bool g_unknownSyntaxErrorOccured = false;
+
 list<Tag> tags;
+
+string fileToParse;
 
 extern "C"
 {
@@ -27,18 +32,19 @@ extern "C"
     {
         printf("[E,%d]: %s.\n", g_line, s);
         g_errorOccured = true;
+        g_unknownSyntaxErrorOccured = true;
     }
 }
 
 int main(int argc, char ** argv)
 {
-    char* fileToParse = argv[1];
+    fileToParse.assign(argv[1]);
 
-    errno_t error = fopen_s(&yyin, fileToParse, "r");
-    if (error != 0)
+    yyin = fopen(fileToParse.c_str(), "r");
+    if (yyin == NULL)
     {
-        printf("[E]: Can't open file: %s\n", fileToParse);
-        return false;
+        printf("[E]: Can't open file: %s\n", fileToParse.c_str());
+        Exit(-1);
     }
 
     yyparse();
@@ -46,14 +52,5 @@ int main(int argc, char ** argv)
 
     ValidateTagsNesting(tags);
 
-    if (g_errorOccured)
-    {
-        printf("[E]: Document \"%s\" is not valid.\n", fileToParse);
-        Exit(-1);
-    }
-    else
-    {
-        printf("[I]: Document \"%s\" is valid.\n", fileToParse);
-        Exit(1);
-    } 
+    Exit(1);
 }

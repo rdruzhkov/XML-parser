@@ -1,0 +1,16 @@
+<!-- Improperly nested tags example -->
+<note>
+  <ImproperlyNested_1>
+    <ImproperlyNested_2>    <!-- Improperly nested tags -->
+  </ImproperlyNested_1>     <!-- Improperly nested tags -->
+      <ImproperlyNested_3>  <!-- Improperly nested tags -->
+    </ImproperlyNested_2>   <!-- Improperly nested tags -->
+      </ImproperlyNested_3> <!-- Improperly nested tags -->
+  <t4>
+    <ImproperlyNested_5>    <!-- Improperly nested tags -->
+      <ImproperlyNested_6>  <!-- Improperly nested tags -->
+    </ImproperlyNested_5>   <!-- Improperly nested tags -->
+      </ImproperlyNested_6> <!-- Improperly nested tags -->
+  </t4>
+  <t7><t8><ImproperlyNested_9></t8></t7></ImproperlyNested_9>
+</note>

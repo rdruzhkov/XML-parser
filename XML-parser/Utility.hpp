@@ -3,17 +3,19 @@
 #include <list>
 
 #include <stdio.h>
-#include <conio.h>
 #include <stdlib.h>
 #include <stdarg.h>
 
-#include "C_Structs.h"
+#include "TagType.h"
+#include "C_str.h"
+#include "C_Attribute.h"
+#include "C_Attributes.h"
+
+#include "Attribute.hpp"
 
 using namespace std;
 
 extern bool g_errorOccured;
-
-
 
 class Tag
 {
@@ -41,8 +43,14 @@ extern "C" bool IsWhiteSpace(char* str);
 
 extern "C" void Exit(int exitCode);
 
-extern "C" void ValidateXmlProlog(str xml_keyword, Attribute _1st_attribute, Attribute _2d_attribute);
+extern "C" void AddToTagList(C_str name, TagType type);
 
-extern "C" void AddToTagList(str name, TagType type);
+extern "C" bool ValidateName(C_str name);
+
+extern "C" bool ValidateProlog(C_str name, C_Attributes * c_attributes);
 
 void ValidateTagsNesting(list<Tag>& tags);
+
+bool ValidateAtrributeList(list<Attribute> & attributes);
+
+bool ValidateName(string name, int line);

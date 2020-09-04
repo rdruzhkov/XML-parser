@@ -1,0 +1,7 @@
+<!-- Wrong symbol in the beggining of tag name -->
+<1f>
+<t2>
+<!-- Not closed comment
+</t2>
+
+</1f>
