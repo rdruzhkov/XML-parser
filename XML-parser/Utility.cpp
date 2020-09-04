@@ -87,7 +87,10 @@ extern "C" void Exit(int exitCode)
 	}
 	else
 	{
-		printf("[I]: Document \"%s\" is valid.\n", fileToParse.c_str());
+		if (fileToParse != "" )
+		{
+			printf("[I]: Document \"%s\" is valid.\n", fileToParse.c_str());
+		}
 	}
 
 #ifndef unix

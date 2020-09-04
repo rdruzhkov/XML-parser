@@ -16,7 +16,7 @@ bool g_unknownSyntaxErrorOccured = false;
 
 list<Tag> tags;
 
-string fileToParse;
+string fileToParse = "";
 
 extern "C"
 {
@@ -38,6 +38,12 @@ extern "C"
 
 int main(int argc, char ** argv)
 {
+    if (argc != 2)
+    {
+        printf("[E]: File path not specified.\n", fileToParse.c_str());
+        Exit(-1);
+    }
+
     fileToParse.assign(argv[1]);
 
     yyin = fopen(fileToParse.c_str(), "r");
