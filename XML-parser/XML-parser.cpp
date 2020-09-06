@@ -31,7 +31,7 @@ extern "C"
 
     void yyerror(const char* s)
     {
-        printf("[E,%d]: %s.\n", g_line, s);
+        // printf("[E,%d]: %s.\n", g_line, s);
         g_errorOccured = true;
         g_unknownSyntaxErrorQnt++;
     }

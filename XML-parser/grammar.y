@@ -27,7 +27,7 @@
 
     %token <type_C_str>     ATTRIBUTE_VALUE
     %token <type_C_str>     NAME                 // Element or attribute name.
-    %token <type_C_str>     ELEMENT_TEXT
+
 
     // "K" means Keyword.
     %token <type_cstr>     K_PROLOG_OPEN_BR     // "<?"
@@ -46,9 +46,9 @@
 %% 
     xml_file:   doctype element 
             |   xml_prolog doctype element 
-            |   doctype element close_tags
-            |   xml_prolog doctype element close_tags
-            |   doctype close_tags
+            |   doctype element tags
+            |   xml_prolog doctype element tags
+            |   doctype tags
             |   doctype element elements
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
@@ -57,23 +57,26 @@
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
             }
-            |   doctype element elements close_tags
+            |   doctype element elements tags
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
             }
-            |   xml_prolog doctype element elements close_tags
+            |   xml_prolog doctype element elements tags
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
             }
-            |   doctype xml_prolog
+            |   xml_prolog doctype
             {
                 PrintError("[E]: XML file must contain root element.\n");
             }
             |   element 
             |   xml_prolog element 
-            |   element close_tags
-            |   xml_prolog element close_tags
-            |   close_tags
+            |   element tags
+            |   xml_prolog element tags
+            |   xml_prolog close_tag tags
+            |   xml_prolog doctype close_tag tags
+            |   doctype close_tag tags
+            |   close_tag tags
             |   element elements
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
@@ -82,11 +85,11 @@
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
             }
-            |   element elements close_tags
+            |   element elements tags
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
             }
-            |   xml_prolog element elements close_tags
+            |   xml_prolog element elements tags
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
             }
@@ -115,23 +118,16 @@
            |    open_tag element_body close_tag  
            |    open_tag error
                 {
-                    PrintError("[E,%d]: (Critical error) Element structure error.\n", g_line);
-
                     g_unknownSyntaxErrorQnt--;
 
                     yyerrok;
 
-                    Exit(-1);
                 }
            |    open_tag element_body error
                 {
-                    PrintError("[E,%d]: (Critical error) Element structure error.\n", g_line);
-
                     g_unknownSyntaxErrorQnt--;
 
                     yyerrok;
-
-                    Exit(-1);
                 }
     ;
 
@@ -139,9 +135,7 @@
             |   elements element
     ;
 
-    element_body:   ELEMENT_TEXT
-                |   element
-                |   element_body ELEMENT_TEXT
+    element_body:   element
                 |   element_body element 
     ;
 
@@ -234,8 +228,10 @@
                    yyerrok;
                 }
 
-    close_tags:  close_tag
-              |  close_tags close_tag
+    tags:  close_tag
+        |  open_tag
+        |  tags open_tag
+        |  tags close_tag
     ;
 
     attributes: attribute

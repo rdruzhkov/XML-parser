@@ -93,6 +93,10 @@ cdataOpenTag		\<\!\[CDATA\[
 						}
 					}
 
+<INITIAL><<EOF>>		{
+							PrintError("[E]: File is empty or doesn't contain any XML data.\n");
+							Exit(-1);
+						}
 
 <EXPECTING_ROOT>\<		{
 							yy_push_state( BODY );
@@ -160,9 +164,7 @@ cdataOpenTag		\<\!\[CDATA\[
 														yy_push_state( EXPECTING_NAME );
 														return K_ELEM_CLOSE_TAG_OPEN_BRACKET;							
 													}
-<BODY>{text}					{
-									return ELEMENT_TEXT;
-								}
+<BODY>{text}					{;}
 <BODY>&							{
 									PrintError("[E,%d]: \"&\" is not escaped or is part of not existing escape sequence.\n", g_line);
 								}
