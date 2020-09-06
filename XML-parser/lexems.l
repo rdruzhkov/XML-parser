@@ -35,6 +35,7 @@
 %x EXPECTING_NAME
 %x COMMENT
 %x CDATA
+%x DOCTYPE
 
 
 digit				[0-9]
@@ -105,7 +106,11 @@ cdataOpenTag		\<\!\[CDATA\[
 								PrintError("[E]: File is empty.\n");
 								Exit(-1);
 							}
-						}						
+						}
+<EXPECTING_ROOT>\<\!DOCTYPE	{	
+								yy_push_state( DOCTYPE );
+								return K_DOCTYPE_START;
+							}
 
 <PROLOG>\?\>		{
 						yy_push_state( EXPECTING_ROOT );
@@ -208,18 +213,18 @@ cdataOpenTag		\<\!\[CDATA\[
 													yy_push_state( COMMENT );
 												}
 
-<OPEN_TAG,CLOSE_TAG>\>			{
+<OPEN_TAG,CLOSE_TAG,DOCTYPE>\>			{
 									yy_pop_state();	
 									return K_ELEM_TAG_CLOSE_BRACKET;
 								}
 
 <OPEN_TAG,CLOSE_TAG,PROLOG>:		{ return *yytext; }
 
-<PROLOG,OPEN_TAG,CLOSE_TAG>{name}		{
-											str_Init( & yylval.type_C_str, yytext);
-											yylval.type_C_str.line = g_line;
-											return NAME;
-										}
+<PROLOG,OPEN_TAG,CLOSE_TAG,DOCTYPE>{name}		{
+													str_Init( & yylval.type_C_str, yytext);
+													yylval.type_C_str.line = g_line;
+													return NAME;
+												}
 <PROLOG,OPEN_TAG,CLOSE_TAG>[=]			{ return *yytext; }
 <PROLOG,OPEN_TAG,CLOSE_TAG>\"			{
 											yy_push_state( DOUBLE_QUOTED );	
@@ -230,24 +235,24 @@ cdataOpenTag		\<\!\[CDATA\[
 											return *yytext;
 										}
 
-<CDATA,EXPECTING_NAME,EXPECTING_ROOT,COMMENT,PROLOG,OPEN_TAG,CLOSE_TAG,BODY>{whiteSpace}+		{
-																									g_line += CountChar(yytext, '\n');
-																								}
+<CDATA,EXPECTING_NAME,EXPECTING_ROOT,COMMENT,PROLOG,OPEN_TAG,CLOSE_TAG,BODY,DOCTYPE>{whiteSpace}+		{
+																											g_line += CountChar(yytext, '\n');
+																										}
 
-<PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG,EXPECTING_NAME>{commentOpenTag}		{
+<PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG,EXPECTING_NAME,DOCTYPE>{commentOpenTag}		{
 																								commentStartLine = g_line;
 																								PrintError("[E,%d]: Comments are allowed only inside of element body or just after prologue.\n", g_line);
 																								yy_push_state( COMMENT );
 																							}
-<INITIAL,EXPECTING_ROOT,PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG,EXPECTING_NAME>{cdataOpenTag}		{
+<INITIAL,EXPECTING_ROOT,PROLOG,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG,EXPECTING_NAME,DOCTYPE>{cdataOpenTag}		{
 																													cdataStartLine = g_line;
 																													PrintError("[E,%d]: CDATA sections are allowed only inside of element body.\n", g_line);
 																													yy_push_state( CDATA );
 																												}
 
-<PROLOG,BODY,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG,EXPECTING_ROOT,COMMENT,CDATA>.	{
-																								PrintError("[E,%d]: Wrong place for symbol \"%c\".\n", g_line, *yytext);
-																							}
+<PROLOG,DOCTYPE,EXPECTING_NAME,BODY,DOUBLE_QUOTED,SINGLE_QUOTED,OPEN_TAG,CLOSE_TAG,EXPECTING_ROOT,COMMENT,CDATA>.	{
+																														PrintError("[E,%d]: Wrong place for symbol \"%c\".\n", g_line, *yytext);
+																													}
 
 %%
 

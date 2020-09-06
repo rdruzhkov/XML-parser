@@ -33,6 +33,7 @@
     %token <type_cstr>     K_PROLOG_OPEN_BR     // "<?"
     %token <type_cstr>     K_PROLOG_CLOSE_BR    // "?>"
 
+    %token <type_cstr>     K_DOCTYPE_START                  // "<!DOCTYPE"
     %token <type_cstr>     K_ELEM_OPEN_TAG_OPEN_BRACKET     // "<"
     %token <type_cstr>     K_ELEM_CLOSE_TAG_OPEN_BRACKET    // "</"
     %token <type_cstr>     K_ELEM_TAG_CLOSE_BRACKET         // ">"
@@ -43,7 +44,32 @@
     %type <type_C_Attribute> attributes
 
 %% 
-    xml_file:   element 
+    xml_file:   doctype element 
+            |   xml_prolog doctype element 
+            |   doctype element close_tags
+            |   xml_prolog doctype element close_tags
+            |   doctype close_tags
+            |   doctype element elements
+            {
+                PrintError("[E]: XML file can contain only one root element.\n");
+            }
+            |   xml_prolog doctype element elements
+            {
+                PrintError("[E]: XML file can contain only one root element.\n");
+            }
+            |   doctype element elements close_tags
+            {
+                PrintError("[E]: XML file can contain only one root element.\n");
+            }
+            |   xml_prolog doctype element elements close_tags
+            {
+                PrintError("[E]: XML file can contain only one root element.\n");
+            }
+            |   doctype xml_prolog
+            {
+                PrintError("[E]: XML file must contain root element.\n");
+            }
+            |   element 
             |   xml_prolog element 
             |   element close_tags
             |   xml_prolog element close_tags
@@ -64,7 +90,7 @@
             {
                 PrintError("[E]: XML file can contain only one root element.\n");
             }
-            | xml_prolog
+            |   xml_prolog
             {
                 PrintError("[E]: XML file must contain root element.\n");
             }
@@ -81,6 +107,8 @@
                     PrintError("[E]: XML prolog must contain attributes.\n");
                 }
     ;
+
+    doctype:    K_DOCTYPE_START NAME K_ELEM_TAG_CLOSE_BRACKET
 
     element:    self_closing_tag
            |    open_tag close_tag
