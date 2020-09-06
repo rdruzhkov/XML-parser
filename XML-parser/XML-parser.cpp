@@ -12,7 +12,8 @@ using namespace std;
 
 bool g_errorOccured = false;
 
-bool g_unknownSyntaxErrorOccured = false;
+extern "C" int g_unknownSyntaxErrorQnt = 0;
+extern "C" bool g_checkNesting = true;
 
 list<Tag> tags;
 
@@ -32,7 +33,7 @@ extern "C"
     {
         printf("[E,%d]: %s.\n", g_line, s);
         g_errorOccured = true;
-        g_unknownSyntaxErrorOccured = true;
+        g_unknownSyntaxErrorQnt++;
     }
 }
 
@@ -56,7 +57,10 @@ int main(int argc, char ** argv)
     yyparse();
     fclose(yyin);
 
-    ValidateTagsNesting(tags);
+    if (g_checkNesting)
+    {
+        ValidateTagsNesting(tags);
+    }
 
     Exit(1);
 }

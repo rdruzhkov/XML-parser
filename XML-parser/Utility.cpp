@@ -28,7 +28,7 @@
 using namespace std;
 
 extern string fileToParse;
-extern bool g_unknownSyntaxErrorOccured;
+extern "C" extern int g_unknownSyntaxErrorQnt;
 
 extern "C" void PrintError(char const* const _Format, ...)
 {
@@ -78,9 +78,9 @@ extern "C" void Exit(int exitCode)
 	{
 		printf("[E]: Document \"%s\" is not valid.\n", fileToParse.c_str());
 
-		if (g_unknownSyntaxErrorOccured)
+		if (g_unknownSyntaxErrorQnt)
 		{
-			printf("[E]: Unknown syntax error(s) ocured.\n");
+			printf("[E]: %d unknown syntax error(s) ocured.\n", g_unknownSyntaxErrorQnt);
 		}
 
 		_exitCode = -1;
@@ -230,6 +230,11 @@ FindImproperlyNestedOpenTag(list<Tag>& tags)
 
 		it++;
 		nextIt++;
+	}
+
+	if ((*it).Type() == Open)
+	{
+		return make_pair(it, tags.end());
 	}
 
 	return make_pair(tags.end(), tags.end());
@@ -462,9 +467,9 @@ extern "C" bool ValidateProlog(C_str _name, C_Attributes * c_attributes)
 
 	bool errorOccured = false;
 
-	if (attributes.size() > 2)
+	if (attributes.size() > 3)
 	{
-		PrintError("[E,%d]: Prolog can contain only \"version\" and \"encoding\".\n", nameLine);
+		PrintError("[E,%d]: Prolog can contain only \"version\", \"encoding\" and \"standalone\" atttributes.\n", nameLine);
 		return false;
 	}
 
@@ -478,7 +483,7 @@ extern "C" bool ValidateProlog(C_str _name, C_Attributes * c_attributes)
 
 	if ((*it).name() != "version")
 	{
-		PrintError("[E,%d]: Prolog 1st attribute should be \"version\".\n", (*it).nameLine());
+		PrintError("[E,%d]: Prolog 1st attribute must be \"version\".\n", (*it).nameLine());
 		errorOccured = true;
 	}
 	else if ((*it).value() != "1.0")
@@ -495,7 +500,7 @@ extern "C" bool ValidateProlog(C_str _name, C_Attributes * c_attributes)
 
 	if ((*it).name() != "encoding")
 	{
-		PrintError("[E,%d]: Prolog 2d attribute should be \"encoding\".\n", (*it).nameLine());
+		PrintError("[E,%d]: Prolog 2d attribute must be \"encoding\".\n", (*it).nameLine());
 		errorOccured = true;
 	}
 	else if (_stricmp((*it).value().c_str(), "ASCII") != 0 &&
@@ -506,6 +511,24 @@ extern "C" bool ValidateProlog(C_str _name, C_Attributes * c_attributes)
 		PrintError("[E,%d]: Prolog \"encoding\" attribute can only contain \"ASCII\", \
 \"Windows-1252\", \"UTF-8\", \"ISO-8859-1\" in any case.\n", (*it).valueLine());
 
+		errorOccured = true;
+	}
+
+	it++;
+	if (it == attributes.end())
+	{
+		return errorOccured;
+	}
+
+	if ((*it).name() != "standalone")
+	{
+		PrintError("[E,%d]: Prolog 3d attribute must be \"standalone\".\n", (*it).nameLine());
+		errorOccured = true;
+	}
+	else if ((*it).value() != "yes" &&
+			 (*it).value() != "no")
+	{
+		PrintError("[E,%d]: Prolog \"standalone\" attribute can only contain \"yes\" or \"no\".\n", (*it).valueLine());
 		errorOccured = true;
 	}
 

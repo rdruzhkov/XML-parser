@@ -1,2 +1,2384 @@
-<root>
-</root>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Санкт-Петербургский политехнический университет Петра Великого - Высшее образование в России</title>
+<meta name="keywords" content="политех, СПбПУ, высшее образование, получить высшее образование">
+<meta name="description" content="Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)">
+<meta name="publisher" content="www.spbstu.ru">
+<meta name="sputnik-verification" content="K9F8IDevbA9CTcVp">
+<meta property="fb:app_id" content="266419907037800">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Санкт-Петербургский Политехнический Университет Петра Великого. Peter the Great St.Petersburg Polytechnic University">
+<meta property="og:title" content="Санкт-Петербургский политехнический университет Петра Великого - Высшее образование в России">
+<meta property="og:url" content="https://www.spbstu.ru/">
+<meta property="og:image" content="https://www.spbstu.ru/local/templates/main/img/logo.png">
+
+<script data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+<script data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+
+<link href="/bitrix/cache/css/s1/main/kernel_main/kernel_main.css?159844171330615"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/main/page_20953374cf9554c7d43a7df050f7083e/page_20953374cf9554c7d43a7df050f7083e.css?15984364559002"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/main/template_b84edb4cfe9d9567f0bc5d6c057d279e/template_b84edb4cfe9d9567f0bc5d6c057d279e.css?1598436455802524"  data-template-style="true"  rel="stylesheet" />
+
+
+
+<link href="https://www.spbstu.ru/" rel="canonical">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+<link href="/local/templates/main/js-plugins/revolution/css/settings.css?v=3" rel="stylesheet">
+<link href="/local/templates/main/js-plugins/revolution/css/layers.css?v=3" rel="stylesheet">
+<link href="/local/templates/main/js-plugins/revolution/css/navigation.css?v=3" rel="stylesheet"><link rel="apple-touch-icon" sizes="180x180" href="/local/templates/main/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/local/templates/main/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/local/templates/main/img/favicon-16x16.png">
+<link rel="manifest" href="/local/templates/main/img/site.webmanifest">
+<link rel="mask-icon" href="/local/templates/main/img/safari-pinned-tab.svg" color="#21a649">
+<meta name="msapplication-TileColor" content="#21a649">
+<meta name="theme-color" content="#ffffff">
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+</head>
+<body class="activate-appear-animation header-6 header-polytech">
+
+    <!--[if lt IE 9]>
+            <div class="container"><p class="alert warning">Вы используете <strong>устаревший и ограниченный по возможностям</strong> браузер. Компания Microsoft более не поддерживает Ваш браузер. Мы рекомендуем Вам использовать актуальные и защищенные браузеры: <a href="http://browsehappy.com/">Выберите обновленный браузер для себя.</a></p></div>
+        <![endif]-->
+<!-- global-wrapper -->
+<div id="global-wrapper">
+<!-- header -->
+	  <header class="menu-header politech-header">
+    <nav class="poly_menu_buttons">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 clearfix">
+            <div class="small-logo-container"> <a href="/" class="poly_logo_small hidden-lg"> <img src="/local/templates/main/img/polytech_logo_sm.svg" alt=""></a>
+              <div class="clear"></div>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-container" > <span class="sr-only">Навигация</span><i class="fa fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--  Навигационный блок меню институтов и подразделений -->
+    <div class="container-fluid collapse navbar-collapse" id="menu-container">
+      <div class="col-md-12" itemscope>
+      <a class="small-eye" href="#" itemprop="Copy" title="Версия для слабовидящих"><i class="fa fa-eye"></i><span>Версия для слабовидящих</span></a>
+            <div class="small-search clearfix">
+					<div id="sb-search_1">
+	<form class="clearfix" action="/search/index.php">
+		<input class="sb-search-input-small" placeholder="Поиск по сайту..." type="search" value="" name="search" id="search_1">
+		<!--<input class="sb-search-submit" type="submit" value="">--> 
+		<span class="sb-icon-search"></span>
+	</form>
+	</div>
+			</div>
+        <nav class="inst-menu navbar-right clearfix" id="instMenu">
+          <ul class="inst-small-screen clearfix">
+            <li><a href="/structure/institutes/">Институты</a></li>
+            <li><a href="/structure/units/">Подразделения</a></li>
+          </ul>
+		  	<div id="sb-search" class="sb-search">
+	<form action="/search/index.php">
+		<input id="search"  class="sb-search-input" placeholder="Поиск по сайту..." type="search" value="" name="q" autocomplete="off"/>
+		<input name="s" class="sb-search-submit" type="submit" value="" />
+		<span class="sb-icon-search"></span>
+	</form>
+	</div>
+<div class="dropdown-lang"><!-- -->
+	<a href="//www.spbstu.ru/">ru<i class="fa fa-caret-down"></i></a>
+	    <ul>
+				<li><a href="//chinese.spbstu.ru/">cn</a></li>
+				<li><a href="//english.spbstu.ru/">en</a></li>
+				<li><a href="https://spanish.spbstu.ru">es</a></li>
+    </ul>
+	</div><a href="#" class="eye"  title="Версия для слабовидящих"><i class="fa fa-eye"></i></a>
+          <a class="coord-council-btn" href="https://ksid.spbstu.ru" title="Координационный совет
+по области образования «Инженерное дело,
+технологии и технические науки»" target="_blank">КС &laquo;Инженерное дело&raquo;</a>
+                <ul class="nav navbar-nav mega-list"><li class="polytech-mega-menu-trigger"><a href="javascript:void(0)" class="has-sub-menu">Институты</a><div class="polytech-mega-menu sub-menu"><div class="col-md-12 additional_buttons"><a href="/campus-map/"  class="btn default"><i class="fa fa-map-marker fa-fw"></i> Карта кампуса</a><a href="/virt_polytech/" target="_blank" class="btn default"><i class="fa fa-street-view fa-fw"></i> Виртуальный тур</a></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Базовые институты</div><ul><li class="col-md-4 institution-item"><a href="https://hum.spbstu.ru" target="_blank">Гуманитарный институт</a></li><li class="col-md-4 institution-item"><a href="https://ice.spbstu.ru/" target="_blank">Инженерно-строительный институт</a></li><li class="col-md-4 institution-item"><a href="https://ibmst.spbstu.ru/" target="_blank">Институт биомедицинских систем и биотехнологий</a></li><li class="col-md-4 institution-item"><a href="https://ic.spbstu.ru/" target="_blank">Институт кибербезопасности и защиты информации</a></li><li class="col-md-4 institution-item"><a href="https://icst.spbstu.ru" target="_blank">Институт компьютерных наук и технологий</a></li><li class="col-md-4 institution-item"><a href="https://immit.spbstu.ru/" target="_blank">Институт машиностроения, материалов и транспорта</a></li><li class="col-md-4 institution-item"><a href="https://iamt.spbstu.ru" target="_blank">Институт передовых производственных технологий</a></li><li class="col-md-4 institution-item"><a href="https://iamm.spbstu.ru" target="_blank">Институт прикладной математики и механики</a></li><li class="col-md-4 institution-item"><a href="https://phnt.spbstu.ru/" target="_blank">Институт физики, нанотехнологий и телекоммуникаций</a></li><li class="col-md-4 institution-item"><a href="https://ifkst.spbstu.ru/" target="_blank">Институт физической культуры, спорта и туризма</a></li><li class="col-md-4 institution-item"><a href="https://iets.spbstu.ru" target="_blank">Институт энергетики</a></li><li class="col-md-4 institution-item"><a href="https://imet.spbstu.ru/" target="_blank">Институт промышленного менеджмента, экономики и торговли</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Высшие школы</div><ul><li class="col-md-4 institution-item"><a href="https://iep.spbstu.ru/" target="_blank">Высшая школа международных образовательных программ</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Филиалы и представительства</div><ul><li class="col-md-4 institution-item"><a href="https://sbor.spbstu.ru" target="_blank">Институт ядерной энергетики (филиал) ФГАОУ ВО &quot;СПбПУ&quot; в г. Сосновый Бор</a></li><li class="col-md-4 institution-item"><a href="/structure/representative-office-spbpu-shanghai/" target="_blank">Представительство ФГАОУ ВО &quot;СПбПУ&quot; в г. Шанхае (Китайская Народная Республика)</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Лицей, ИСПО</div><ul><li class="col-md-4 institution-item"><a href="/structure/estestvenno_nauchnyy_litsey/" target="_blank">Естественно-научный лицей</a></li><li class="col-md-4 institution-item"><a href="https://college.spbstu.ru/" target="_blank">Институт среднего профессионального образования</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Центры дополнительного профессионального образования</div><ul><li class="col-md-4 institution-item"><a href="/structure/stroikursi/" target="_blank">Центр дополнительных профессиональных программ Инженерно-строительного института</a></li><li class="col-md-4 institution-item"><a href="/structure/center-continuing-education/" target="_blank">Центр дополнительного образования ИПМЭиТ</a></li><li class="col-md-4 institution-item"><a href="https://hum.spbstu.ru/centr_dopolnitelnyh_obrazovatelnyh_programm_gi/" target="_blank">Центр дополнительных образовательных программ ГИ</a></li><li class="col-md-4 institution-item"><a href="/structure/rec_engineering_pedagogy/" target="_blank">Научно-образовательный центр &quot;Инженерная педагогика&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/training_center_integrated_security/" target="_blank">Учебно-методический центр комплексной безопасности</a></li><li class="col-md-4 institution-item"><a href="/structure/vysshaya_shkola_promyshlennogo_menedzhmenta_i_ekonomiki/" target="_blank">Высшая школа промышленного менеджмента и экономики</a></li><li class="col-md-4 institution-item"><a href="https://ido.spbstu.ru/" target="_blank">Институт дополнительного образования</a></li><li class="col-md-4 institution-item"><a href="/structure/mezhdunarodnyy_nauchno_obrazovatelnyy_tsentr_national_instruments_poltekhnik/" target="_blank">Международный научно-образовательный центр &quot;National Instruments-Политехник&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/center_financial_monitoring/" target="_blank">Международный научно-образовательный центр финансового мониторинга</a></li><li class="col-md-4 institution-item"><a href="/structure/mezhregionalnyy_tsentr_okhrany_truda/" target="_blank">Межрегиональный центр техносферной безопасности</a></li><li class="col-md-4 institution-item"><a href="/structure/nauchno_obrazovatelnyy_tsentr_informatsionnaya_bezopasnost/" target="_blank">Научно-образовательный центр &quot;Информационная безопасность&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/regional-center-occupational-safety/" target="_blank">Региональный центр безопасности труда</a></li><li class="col-md-4 institution-item"><a href="http://rccedu.spbstu.ru/" target="_blank">Северо-Западный региональный центр компетенций в области онлайн-обучения СПбПУ</a></li><li class="col-md-4 institution-item"><a href="https://ifkst.spbstu.ru/department/centr_dopolnitelnogo_obrazovaniya_instituta_fizicheskoy_kultury_sporta_i_turizma/" target="_blank">Центр дополнительного образования ИФКСиТ</a></li><li class="col-md-4 institution-item"><a href="/structure/tsentr_dopolnitelnykh_obrazovatelnykh_programm_hsbtft/" target="_blank">Центр дополнительных образовательных программ ВШБиПП</a></li></ul></div></div></div></li><!-- меню подразделений --><li class="polytech-mega-menu-trigger"><a href="javascript:void(0)" class="has-sub-menu">Подразделения</a><div class="polytech-mega-menu sub-menu"><div class="col-md-12"><div class="mega-inner"><div class="h2">Административные подразделения</div><ul><li class="col-md-4 institution-item"><a href="/structure/rektorat/">Ректорат</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_personala/">Управление персонала</a></li><li class="col-md-4 institution-item"><a href="/structure/sluzhba_audita_finansovogo_kontrolya_i_ekonomicheskoy_bezopasnosti/">Служба аудита, финансового контроля и экономической безопасности</a></li><li class="col-md-4 institution-item"><a href="/structure/kafedra_yunesko_upravlenie_kachestvom_dlya_ustoychivogo_razvitiya/">Кафедра ЮНЕСКО &quot;Управление качеством образования в интересах устойчивого развития&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/administrative_department/">Управление делами</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_organizatsionnoy_deyatelnosti_molodezhi/">Управление организационной деятельности молодежи</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Обеспечивающие подразделения</div><ul><li class="col-md-4 institution-item"><a href="/structure/kontraktnaya_sluzhba/">Контрактная служба</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_sotsialno_bytovogo_i_materialno_tekhnicheskogo_obespecheniya/">Управление социально-бытового и материально-технического обеспечения</a></li><li class="col-md-4 institution-item"><a href="/structure/monitoring-center-science-education/">Центр мониторинга науки и образования</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Научная деятельность</div><ul><li class="col-md-4 institution-item"><a href="/structure/upni/">Отдел научных изданий</a></li><li class="col-md-4 institution-item"><a href="/structure/nauchno_obrazovatelnyy_tsentr_gazpromneft_politekh/">Научно-образовательный центр &quot;Газпромнефть-Политех&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/nts/">Сектор научно-технического совета</a></li><li class="col-md-4 institution-item"><a href="/structure/management-scientific-organizational-activities/">Управление научно-организационной деятельности</a></li><li class="col-md-4 institution-item"><a href="/structure/untdm/">Управление научно-технической деятельности молодежи</a></li><li class="col-md-4 institution-item"><a href="/structure/dsrd/">Управление научных исследований и разработок</a></li><li class="col-md-4 institution-item"><a href="/structure/tsentr_quot_promyshlennaya_rentgenovskaya_tomografiya_quot/">Центр  &quot;Промышленная рентгеновская томография&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/ipu/">Центр интеллектуальной собственности и трансфера технологий</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Образовательная деятельность</div><ul><li class="col-md-4 institution-item"><a href="/structure/voennyy_uchebnyy_tsentr/">Военный учебный центр</a></li><li class="col-md-4 institution-item"><a href="/structure/departament_molodezhnogo_tvorchestva_i_kulturnykh_programm/">Дирекция культурных программ и молодежного творчества</a></li><li class="col-md-4 institution-item"><a href="/structure/management-basic-educational-programs/">Дирекция основных образовательных программ</a></li><li class="col-md-4 institution-item"><a href="/structure/informatsionno_bibliotechnyy_kompleks/">Информационно-библиотечный комплекс</a></li><li class="col-md-4 institution-item"><a href="/structure/educational-scientific-center-spbpu-festo-synergy/">Северо-Западный межвузовский региональный учебно-научный центр &quot;СПбПУ-ФЕСТО &quot;Синергия&quot;&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_avtomatizatsii_obrazovatelnoy_deyatelnosti/">Управление автоматизации образовательной деятельности</a></li><li class="col-md-4 institution-item"><a href="/structure/tsentr_kachestva_obrazovaniya/">Центр качества образования</a></li><li class="col-md-4 institution-item"><a href="/structure/open-education-center/">Центр открытого образования</a></li><li class="col-md-4 institution-item"><a href="/structure/tsentr-proforientatsii-i-dovuzovskoy-podgotovki/">Центр профориентации и довузовской подготовки</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Международная деятельность</div><ul><li class="col-md-4 institution-item"><a href="/structure/resursnyy_tsentr_mezhdunarodnoy_deyatelnosti/">Ресурсный центр международной деятельности</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_mezhdunarodnogo_obrazovaniya/">Управление международного образования</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_mezhdunarodnogo_sotrudnichestva/">Управление международного сотрудничества</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Перспективные проекты</div><ul><li class="col-md-4 institution-item"><a href="/structure/tsentr_natsionalnoy_tekhnologicheskoy_initsiativy_novye_proizvodstvennye_tekhnologii/">Центр Национальной технологической инициативы &quot;Новые производственные технологии&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/onti/">Объединенный научно-технологический институт</a></li><li class="col-md-4 institution-item"><a href="/structure/teaching_union_universities_russia/">Научно-методический центр Координационного совета федеральных учебно-методических объединений по области образования &quot;Инженерное дело&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/tekhnopark_politekhnicheskiy_tekhnopark/">Технопарк &quot;Политехнический&quot; (Технопарк)</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Экономика и финансы</div><ul><li class="col-md-4 institution-item"><a href="/structure/accounting_office/">Управление бухгалтерского учета</a></li><li class="col-md-4 institution-item"><a href="/structure/department_economics/">Департамент экономики и финансов</a></li><li class="col-md-4 institution-item"><a href="/structure/otdel_information_technology/">Отдел информационных технологий</a></li><li class="col-md-4 institution-item"><a href="/structure/management-property-complex/">Управление имущественного комплекса</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_pravovogo_obespecheniya/">Управление правового обеспечения</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Информационно-ресурсное обеспечение</div><ul><li class="col-md-4 institution-item"><a href="/structure/departament_informatsionnykh_resursov_i_tekhnologiy/">Департамент информационных ресурсов и технологий</a></li><li class="col-md-4 institution-item"><a href="/structure/scc/">Управление &quot;СКЦ&quot;</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Хозяйственные службы</div><ul><li class="col-md-4 institution-item"><a href="/structure/departament_administrativno_khozyaystvennykh_sluzhb/">Департамент административно-хозяйственных служб</a></li><li class="col-md-4 institution-item"><a href="/structure/departament_glavnogo_inzhenera/">Департамент главного инженера</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_organizatsii_remontnykh_rabot/">Управление организации ремонтных работ</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_okhrany_truda/">Управление охраны труда</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_regionalnymi_uchebno_ozdorovitelnymi_obektami/">Управление региональными учебно-оздоровительными объектами</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_transporta_mekhanizatsii/">Управление транспорта и механизации</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Связи с общественностью</div><ul><li class="col-md-4 institution-item"><a href="/structure/museum_complex/">Дирекция музейно-экскурсионной деятельности</a></li><li class="col-md-4 institution-item"><a href="/structure/media_tsentr_spbpu/">Медиа-центр СПбПУ</a></li><li class="col-md-4 institution-item"><a href="/structure/newspaper_Polytechnic/">Редакция газеты &quot;Политехник&quot;</a></li><li class="col-md-4 institution-item"><a href="/structure/upravlenie_po_svyazyam_s_obshchestvennostyu/">Управление по связям с общественностью</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Безопасность</div><ul><li class="col-md-4 institution-item"><a href="/structure/mezhdunarodnyy_tsentr_sodeystviya_realizatsii_programm_i_proektov_yunido/">Международный центр содействия реализации программ и проектов ЮНИДО</a></li><li class="col-md-4 institution-item"><a href="/structure/otdel_zashchity_konfidentsiialnoy_informatsii/">Отдел защиты конфиденциальной информации</a></li><li class="col-md-4 institution-item"><a href="/structure/department-mobilization-preparation/">Отдел мобилизационной подготовки</a></li><li class="col-md-4 institution-item"><a href="/structure/civil_security_management/">Управление гражданской безопасности</a></li><li class="col-md-4 institution-item"><a href="/structure/departament_rezhima_bezopasnosti/">Управление защиты государственной тайны</a></li></ul></div></div><div class="col-md-12"><div class="mega-inner"><div class="h2">Студгородок СПбПУ</div><ul><li class="col-md-4 institution-item"><a href="/structure/student_residencek_spbgpu/">Студенческий городок СПбПУ</a></li></ul></div></div></div></li></ul></nav>
+<a href="/" class="poly_logo poly_logo_large"><img src="/local/templates/main/img/polytech_logo.svg" alt=""></a>
+		<!-- верхнее меню (TOP MENU) --><nav class="navbar-right audience-menu" id="audienceMenu"><ul class="nav nav-pills"><li class="dropdown"><a href="/services/" class="dropdown-toggle" data-toggle="dropdown">
+			<span class="aud-name">Сервисы</span><span class="caret-wrapper"><span class="caret"></span></span><div class="clear"></div></a><ul class="dropdown-menu" role="menu"><li><a href="https://pay.spbstu.ru/www/form_pay.html" target="_blank">Электронная оплата</a></li><li><a href="http://open.spbstu.ru/lk-learner/" target="_blank">Личный кабинет обучающегося</a></li><li><a href="https://enroll.spbstu.ru/" target="_blank">Личный кабинет абитуриента</a></li><li><a href="https://mail.spbstu.ru" target="_blank">Корпоративная почта</a></li><li><a href="/feedback/">Обращение граждан</a></li></ul></li><li class="dropdown"><a href="https://school.spbstu.ru/" class="dropdown-toggle">
+			<span class="aud-name">Школьникам</span><div class="clear"></div></a><li class="dropdown"><a href="/applicants/" class="dropdown-toggle" data-toggle="dropdown">
+			<span class="aud-name">Абитуриентам</span><span class="caret-wrapper"><span class="caret"></span></span><div class="clear"></div></a><ul class="dropdown-menu" role="menu"><li><a href="/abit/bachelor/">Поступление 2020</a></li><li><a href="/applicants/admissions/">Приемная комиссия</a></li><li><a href="/sveden/Abitur/">Информация по приему</a></li><li><a href="/education/students/paid-educational-services/">Платные образовательные услуги</a></li><li><a href="/applicants/admission-of-foreign-citizens/">Поступление иностранных граждан</a></li><li><a href="/applicants/open-days/">Дни открытых дверей</a></li><li><a href="https://school.spbstu.ru/olympiads/" target="_blank">Олимпиады школьников</a></li><li><a href="https://courses.spbstu.ru/" target="_blank">Подготовительные курсы</a></li><li><a href="/virt_polytech/">Виртуальный тур по СПбПУ</a></li><li><a href="/students/social-security/hostel/">Общежития</a></li><li><a href="/abit/faq/">Советы абитуриентам</a></li></ul></li><li class="dropdown"><a href="/students/" class="dropdown-toggle" data-toggle="dropdown">
+			<span class="aud-name">Студентам</span><span class="caret-wrapper"><span class="caret"></span></span><div class="clear"></div></a><ul class="dropdown-menu" role="menu"><li><a href="/students/schedule/">Расписание</a></li><li><a href="http://open.spbstu.ru/lk-learner/" target="_blank">Личный кабинет</a></li><li><a href="/students/enquiry/">Справки студентам</a></li><li><a href="/students/social-security/">Социальное обеспечение</a></li><li><a href="/students/additional-education/">Дополнительное образование</a></li><li><a href="/students/transferring-students-from-other-universities-to-spbpu/">О переводе в СПбПУ студентов из других вузов</a></li><li><a href="/students/foreign-student/">Иностранному студенту</a></li><li><a href="http://open.spbstu.ru/eios/" target="_blank">Информационная образовательная среда</a></li><li><a href="/education/students/paid-educational-services/">Платные образовательные услуги</a></li><li><a href="/international-cooperation/international-activities/academic-mobility/">Обучение за рубежом</a></li><li><a href="/students/electronic-versions-fqw/">Об электронных версиях ВКР</a></li><li><a href="/students/information-and-library-complex/">Информационно-библиотечный комплекс</a></li><li><a href="/students/employment/">Практика и трудоустройство</a></li><li><a href="/faq/students/">Вопрос-ответ</a></li><li><a href="http://fablab.spbstu.ru/" target="_blank">Наука и техническое творчество</a></li><li><a href="/students/university-program/">Университетские программы</a></li><li><a href="https://umto.spbstu.ru/otdel_organizacii_obshestvennogo_pitaniya_1/" target="_blank">Питание</a></li><li><a href="/students/student-association/">Студенческие объединения</a></li></ul></li><li class="dropdown"><a href="/graduate-students/" class="dropdown-toggle" data-toggle="dropdown">
+			<span class="aud-name">Аспирантам</span><span class="caret-wrapper"><span class="caret"></span></span><div class="clear"></div></a><ul class="dropdown-menu" role="menu"><li><a href="/education/management-structure/postgraduate/">Аспирантура</a></li><li><a href="/graduate-students/admission-information/">Информация по приёму</a></li><li><a href="/education/management-structure/postgraduate/the-learning-process/">Расписание занятий</a></li><li><a href="http://open.spbstu.ru/lk-learner/" target="_blank">Личный кабинет</a></li><li><a href="/graduate-students/scholarship/">Стипендии аспирантам</a></li><li><a href="/science/the-department-of-doctoral-studies/doctorate/">Докторантура</a></li><li><a href="/science/the-department-of-doctoral-studies/dissertation-councils/">Диссертационные советы</a></li><li><a href="/science/the-department-of-doctoral-studies/defences-calendar/">Календарь защит</a></li><li><a href="/education/students/paid-educational-services/">Платные образовательные услуги</a></li><li><a href="/structure/informatsionno_bibliotechnyy_kompleks/">Информационно-библиотечный комплекс</a></li><li><a href="/media/edition/">Научные издания</a></li><li><a href="/faq/graduate-students/">Вопрос-ответ</a></li><li><a href="http://open.spbstu.ru/eios/" target="_blank">Информационная образовательная среда</a></li></ul></li><li class="dropdown"><a href="/graduates/" class="dropdown-toggle" data-toggle="dropdown">
+			<span class="aud-name">Выпускникам</span><span class="caret-wrapper"><span class="caret"></span></span><div class="clear"></div></a><ul class="dropdown-menu" role="menu"><li><a href="/graduates/diplomas-and-certificates/">Дипломы и свидетельства</a></li><li><a href="/graduates/diplomas-nonresident-graduates-2020/">Дипломы иногородним выпускникам 2020</a></li><li><a href="/graduates/issuance-duplicate-diplomas/">Выдача дубликатов дипломов</a></li><li><a href="/graduates/diplom-spbspu-abroad/">Диплом СПбПУ за рубежом</a></li><li><a href="https://community.spbstu.ru/" target="_blank">POLYTECH COMMUNITY</a></li><li><a href="https://community.spbstu.ru/endowment/" target="_blank">Эндаумент фонд</a></li><li><a href="http://alumnilk.spbstu.ru" target="_blank">Личный кабинет выпускника</a></li><li><a href="/students/employment/">Трудоустройство</a></li><li><a href="/graduates/best-graduates/">«Золотые» выпускники</a></li></ul></li><li class="dropdown"><a href="/employees/" class="dropdown-toggle" data-toggle="dropdown">
+			<span class="aud-name">Работникам</span><span class="caret-wrapper"><span class="caret"></span></span><div class="clear"></div></a><ul class="dropdown-menu" role="menu"><li><a href="http://ruz.spbstu.ru/#/teachers">Расписание занятий</a></li><li><a href="https://mail.spbstu.ru" target="_blank">Корпоративная почта</a></li><li><a href="https://staff.spbstu.ru/" target="_blank">Личный кабинет</a></li><li><a href="/university/organizational-documents/administration-catalogue/"> Административный каталог</a></li><li><a href="/structure/upravlenie_personala/">Управление персонала</a></li><li><a href="https://umto.spbstu.ru" target="_blank">Управление социально-бытового и материально-технического обеспечения</a></li><li><a href="/university/organizational-documents/corporate-identity/">Руководство по фирменному стилю</a></li><li><a href="/employees/professional-skill-improvement/">Повышение квалификации</a></li><li><a href="/employees/it/">ИТ-Сервисы</a></li><li><a href="/employees/the-trade-union/">Профком</a></li><li><a href="/structure/informatsionno_bibliotechnyy_kompleks/">Информационно-библиотечный комплекс</a></li><li><a href="/faq/employees/">Вопрос-ответ</a></li></ul></li><li class="dropdown"><a href="/partners/" class="dropdown-toggle" data-toggle="dropdown">
+			<span class="aud-name">Партнерам</span><span class="caret-wrapper"><span class="caret"></span></span><div class="clear"></div></a><ul class="dropdown-menu" role="menu"><li><a href="https://endowment.spbstu.ru/">Эндаумент фонд</a></li><li><a href="/university/strategy-development/strategic-partners/">Наши партнеры</a></li><li><a href="/faq/partners/">Вопрос-ответ</a></li><li><a href="/partners/materials-for-partners/">Материалы для партнеров</a></li></ul></li></ul></nav>
+</div></div>
+    <!-- / Конец навигации по структуре -->
+    <!-- Main navigation -->
+    <div class="color-for-menu">
+    <div class="container-fluid uniPanel">
+      <div class="col-md-12"><nav class="uni-menu linen" id="uniMenu"><ul class="nav navbar-nav nav-polytech-justified mega-list"><li class="polytech-mega-menu-trigger"><a href="/university/" class="has-sub-menu">Университет</a><div class="polytech-mega-menu sub-menu"><div class="mega-inner"><div class="col-md-12"><a class="external-link" href="https://dep.spbstu.ru/obshaya_informaciya/" target="_blank" title="Аккредитация 2018"><i class="fa fa-fw fa-desktop"></i> Аккредитация 2018 <i class="fa fa-share"></i></a></div><div class="col-md-12"><div class="col-md-3"><div class="mega-inner"><div class="h2">Об университете</div><ul><li><a href="/university/about-the-university/welcome-to-the-university/">Приветствие ректора</a></li><li><a href="/university/about-the-university/mission-and-values/">Миссия и ценности</a></li><li><a href="/structure/">Структура университета</a></li><li><a href="/sveden">Сведения об образовательной организации</a></li><li><a href="/university/about-the-university/history/">История</a></li><li><a href="/university/about-the-university/personalities/">Персоналии</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Администрация</div><ul><li><a href="/university/administration/the-supervisory-board/">Наблюдательный совет</a></li><li><a href="/university/administration/the-scientific-council/">Ученый совет</a></li><li><a href="/university/administration/leaders/">Руководители</a></li><li><a href="/university/administration/the-board-of-trustees/">Попечительский совет</a></li><li><a href="/university/administration/international-scientific-council/">Международный научный совет</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Стратегия развития</div><ul><li><a href="https://nticenter.spbstu.ru/" target="_blank">Центр компетенций НТИ</a></li><li><a href="/university/strategy-development/improving-competitiveness-5-100/">Проект повышения конкурентоспособности 5-100</a></li><li><a href="/university/strategy-development/the-development-of-the-national-research-university-nru/">Развитие национального исследовательского университета (НИУ)</a></li><li><a href="/university/strategy-development/the-university-in-numbers/">Университет в цифрах</a></li><li><a href="/university/strategy-development/strategic-partners/">Стратегические партнеры</a></li><li><a href="/university/strategy-development/program-development-student-unions/"> Программа развития деятельности студенческих объединений</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Организационные документы</div><ul><li><a href="/university/organizational-documents/administration-catalogue/">Административный каталог</a></li><li><a href="/university/organizational-documents/license-and-accreditation/">Лицензия и аккредитация</a></li><li><a href="/university/organizational-documents/charter/">Устав</a></li><li><a href="/university/organizational-documents/collective-agreement/">Коллективный договор</a></li><li><a href="/university/organizational-documents/self-assessment-reports/">Документы по самообследованию</a></li><li><a href="/university/organizational-documents/sustainability-reports/">Отчеты в области устойчивого развития</a></li><li><a href="/university/organizational-documents/financial-and-economic-documents/">Финансово-экономические документы</a></li><li><a href="/university/organizational-documents/corporate-identity/">Руководство по фирменному стилю</a></li></ul></div></div></div></div></div></li><li class="polytech-mega-menu-trigger"><a href="/education/" class="has-sub-menu">Образование</a><div class="polytech-mega-menu sub-menu"><div class="mega-inner"><div class="col-md-12"><a class="external-link" href="http://open.spbstu.ru" target="_blank" title="Электронная образовательная среда «Открытый Политех» СПбПУ"><i class="fa fa-fw fa-desktop"></i> Электронная образовательная среда «Открытый Политех» <i class="fa fa-share"></i></a></div><div class="col-md-12"><div class="col-md-3"><div class="mega-inner"><div class="h2">Общая информация</div><ul><li><a href="/education/general-information/educational-activities/">Образовательная деятельность</a></li><li><a href="/education/general-information/specializations/">Направления и специальности</a></li><li><a href="/applicants/admission-of-foreign-citizens/">Поступление иностранных граждан</a></li><li><a href="/education/general-information/international-educational-programs/">Международные образовательные программы</a></li><li><a href="/media/announcements/competitions_grants/">Олимпиады, конкурсы, гранты</a></li><li><a href="/education/general-information/regulations/">Нормативные документы</a></li><li><a href="/students/additional-education/">Дополнительное образование</a></li><li><a href="/education/general-information/authorized-centres/">Авторизованные центры</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Структура управления</div><ul><li><a href="/education/management-structure/organizational-management-scheme/">Организационная схема управления</a></li><li><a href="/education/management-structure/educational-methodical-council/">Учебно-методический совет</a></li><li><a href="/education/management-structure/postgraduate/"> Аспирантура</a></li><li><a href="/education/management-structure/institutions/">Институты</a></li><li><a href="https://sbor.spbstu.ru">Филиал</a></li><li><a href="https://college.spbstu.ru" target="_blank">Институт среднего профессионального образования</a></li><li><a href="https://nsl.spbstu.ru">Лицей</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Обучающимся</div><ul><li><a href="/sveden/education/documents-educational-process-educational-organization/">Описание реализуемых образовательных программ</a></li><li><a href="/sveden/objects/">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li><li><a href="/sveden/vacant/">Вакантные места для приема (перевода)</a></li><li><a href="/education/students/the-restoration-and-translation/">Восстановление и перевод</a></li><li><a href="http://open.spbstu.ru" target="_blank">Высшее образование дистанционно</a></li><li><a href="/education/students/paid-educational-services/">Платные образовательные услуги</a></li><li><a href="/students/electronic-versions-fqw/">Об электронных версиях ВКР</a></li></ul></div></div></div></div></div></li><li class="polytech-mega-menu-trigger"><a href="/science/" class="has-sub-menu">Наука</a><div class="polytech-mega-menu sub-menu"><div class="mega-inner"><div class="col-md-12"><a class="external-link" href="https://research.spbstu.ru" target="_blank" title="Перейти на страницу Научного портала СПбПУ"><img src="/local/templates/main/img/genius.svg" alt=""> Научный портал СПбПУ <i class="fa fa-share"></i></a></div><div class="col-md-12"><div class="col-md-3"><div class="mega-inner"><div class="h2">Общая информация</div><ul><li><a href="http://research.spbstu.ru/" target="_blank">Наука в Политехническом</a></li><li><a href="https://research.spbstu.ru/evaluation_of_science_and_technology/" target="_blank">Показатели результативности НИР</a></li><li><a href="/science/general-information/scientific-technical-council/">Научно-технический совет</a></li><li><a href="https://research.spbstu.ru/proekty_po_fcp/" target="_blank">Проекты по ФЦП</a></li><li><a href="https://research.spbstu.ru/journals/" target="_blank">Научные журналы</a></li><li><a href="https://research.spbstu.ru/grants/" target="_blank">Конкурсы и гранты</a></li><li><a href="/science/general-information/conference/">Конференции, семинары</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Структура научной части</div><ul><li><a href="https://nticenter.spbstu.ru/" target="_blank">Центр компетенций НТИ</a></li><li><a href="http://research.spbstu.ru/labs/" target="_blank">Лаборатории</a></li><li><a href="http://onti.spbstu.ru/public/" target="_blank">Объединенный научно-технологический институт</a></li><li><a href="http://research.spbstu.ru/department/centr_perspektivnuh_issledovaniy/" target="_blank">Центр перспективных исследований</a></li><li><a href="https://research.spbstu.ru/department/centr_razvitiya_tehnologicheskih_proektov_i_predprinimatelstva/" target="_blank">Центр развития технологических проектов и предпринимательства</a></li><li><a href="https://research.spbstu.ru/department/upravlenie_nauchnoy_politiki/" target="_blank">Управление научной политики</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Студентам</div><ul><li><a href="https://research.spbstu.ru/department/upravlenie_nauchno_tehnicheskoy_deyatelnosti_molodezghi/" target="_blank">Управление научно-технической деятельности молодежи</a></li><li><a href="http://week-science.spbstu.ru/" target="_blank">Неделя Науки</a></li><li><a href="http://research.spbstu.ru/smus/" target="_blank">СМУС</a></li><li><a href="https://research.spbstu.ru/konkurs_spbpu/" target="_blank">Конкурсы СПбПУ</a></li><li><a href="https://research.spbstu.ru/cntm/" target="_blank">Наука и техническое творчество</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Отдел по работе с диссертационными советами</div><ul><li><a href="/science/the-department-of-doctoral-studies/independent-award-academic-degrees/">Самостоятельное присуждение ученых степеней</a></li><li><a href="/science/the-department-of-doctoral-studies/attachment/">Прикрепление (соискательство)</a></li><li><a href="/science/the-department-of-doctoral-studies/doctorate/">Докторантура</a></li><li><a href="/science/the-department-of-doctoral-studies/dissertation-councils/">Диссертационные советы</a></li><li><a href="/science/the-department-of-doctoral-studies/defences-calendar/">Календарь защит</a></li></ul></div></div></div></div></div></li><li class="polytech-mega-menu-trigger"><a href="/culture/" class="has-sub-menu">Культура</a><div class="polytech-mega-menu sub-menu"><div class="col-md-3"><div class="mega-inner"><div class="h2">Культурная деятельность</div><ul><li><a href="/culture/cultural-activities/council-culture/">Совет по культуре</a></li><li><a href="http://whitehall.spbstu.ru/">Белый зал</a></li><li><a href="/culture/cultural-activities/the-house-of-scientists-in-forest/">Дом ученых в Лесном</a></li><li><a href="/culture/cultural-activities/educational-and-historical-reserve-the-estate-of-prince-a-i-gagarin-holomci/">Учебно-исторический заповедник «Усадьба князя А.Г. Гагарина «Холомки»</a></li><li><a href="/structure/museum_complex/">Музейный комплекс</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Культурно-образовательные программы</div><ul><li><a href="/culture/cultural-and-educational-programs/creative-semesters/">Творческие семестры в Политехническом</a></li><li><a href="/culture/cultural-and-educational-programs/musical-semesters/">Музыкальные семестры</a></li><li><a href="/culture/cultural-and-educational-programs/literary-terms/">Литературные семестры</a></li><li><a href="/culture/cultural-and-educational-programs/historical-and-philosophical-semesters/">Историко-философские семестры</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Культурно-просветительские проекты</div><ul><li><a href="/culture/cultural-and-educational-projects/festival-pushkin-days-at-the-polytechnic/">Фестиваль «Пушкинские дни в Политехническом»</a></li><li><a href="/culture/cultural-and-educational-projects/easter-festival-in-polytechnic/">«Пасхальный фестиваль» в Политехническом</a></li><li><a href="http://blagovest-fest.ru/" target="_blank">Хоровой конкурс технических вузов России «Благовест»</a></li><li><a href="/culture/cultural-and-educational-projects/festival-golden-autumn/">Фестиваль «Золотая осень»</a></li><li><a href="/culture/cultural-and-educational-projects/children-s-concerts-musical-miracles">Детские концерты «Музыкальные чудеса»</a></li><li><a href="/culture/cultural-and-educational-projects/intercollegiate-youth-festival-friendship-peoples/">Межвузовский Молодежный Фестиваль Дружбы Народов</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Творческие коллективы</div><ul><li><a href="http://radio.spbstu.ru/">Радио Политеха «P.fm»</a></li><li><a href="/culture/creative-team/theater-groups/">Театральные коллективы</a></li><li><a href="/culture/creative-team/musical-groups/">Музыкальные коллективы</a></li><li><a href="/culture/creative-team/dance-groups/">Танцевальные коллективы</a></li><li><a href="/culture/creative-team/art-media">Арт-медиа</a></li></ul></div></div></div></li><li class="polytech-mega-menu-trigger"><a href="/international-cooperation/" class="has-sub-menu">Международное сотрудничество</a><div class="polytech-mega-menu sub-menu"><div class="col-md-3"><div class="mega-inner"><div class="h2">Общая информация</div><ul><li><a href="/international-cooperation/general-information/international-activity-in-figure/">Международная деятельность в цифрах</a></li><li><a href="/international-cooperation/general-information/international-services/">Международные службы</a></li><li><a href="/structure/resursnyy_tsentr_mezhdunarodnoy_deyatelnosti/">Ресурсный центр международной деятельности</a></li><li><a href="/structure/center_expertise_foreign_documents_education/">Центр экспертизы иностранных документов об образовании</a></li><li><a href="/structure/upravlenie_mezhdunarodnogo_sotrudnichestva/receiving_sending">Приём и командирование</a></li><li><a href="/international-cooperation/general-information/documents/">Документы</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Международные образовательные программы</div><ul><li><a href="/international-cooperation/international-educational-programs/the-international-baccalaureate-program/">Международные программы бакалавриата</a></li><li><a href="/international-cooperation/international-educational-programs/international-graduate-programs/">Международные программы магистратуры</a></li><li><a href="/international-cooperation/international-educational-programs/international-graduate-studies-programs/">Международные программы аспирантуры</a></li><li><a href="/international-cooperation/international-educational-programs/dual-degree-programs/">Программы двойного диплома</a></li><li><a href="/international-cooperation/international-educational-programs/international-programs-of-additional-education/">Международные программы дополнительного образования</a></li><li><a href="/international-cooperation/international-educational-programs/summer-school/">Летние школы</a></li><li><a href="/international-cooperation/international-educational-programs/polytechnic-winter-school/">Зимние школы</a></li><li><a href="/international-cooperation/international-educational-programs/grants-and-scholarships/">Гранты и стипендии</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Международная деятельность</div><ul><li><a href="/international-cooperation/international-activities/ro/welcome-to-director/">Представительство СПбПУ в КНР г. Шанхай</a></li><li><a href="/international-cooperation/international-activities/information-center-madrid/">Информационный центр СПбПУ в Мадриде</a></li><li><a href="/international-cooperation/international-activities/innovation-center-spbpu-env">Инновационный центр Наука-Технологии</a></li><li><a href="/international-cooperation/international-activities/map-partners/">Зарубежные партнеры</a></li><li><a href="/international-cooperation/international-activities/international-polytechnic-week/">Международный Форум «Международная Политехническая Неделя»</a></li><li><a href="/international-cooperation/international-activities/international-networks-and-organizations/">Международные сети и организации</a></li><li><a href="/international-cooperation/international-activities/academic-mobility/">Академическая мобильность</a></li><li><a href="/international-cooperation/international-activities/international-project/">Международные проекты</a></li><li><a href="/international-cooperation/international-activities/foreign-economic-activity/">Внешнеэкономическая деятельность</a></li><li><a href="/international-cooperation/international-activities/the-isec/">МНОЦ</a></li></ul></div></div><div class="col-md-3"><div class="mega-inner"><div class="h2">Экспертный центр европейских исследований</div><ul><li><a href="/international-cooperation/expert-center-international-cooperation/about/">О центре</a></li><li><a href="/international-cooperation/expert-center-international-cooperation/europe-today/">Европа сегодня</a></li><li><a href="/international-cooperation/expert-center-international-cooperation/monitoring-covid-19/">Мониторинг в связи с COVID-19</a></li><li><a href="/international-cooperation/expert-center-international-cooperation/education/">Образование</a></li><li><a href="/international-cooperation/expert-center-international-cooperation/scientific-cooperation/">Наука и технологии</a></li><li><a href="/international-cooperation/expert-center-international-cooperation/country-features/">Страны</a></li><li><a href="/international-cooperation/expert-center-international-cooperation/marketing-advertising-promotion/">Маркетинг и продвижение</a></li></ul></div></div></div></li><li class=""><a href="/media/" class="has-sub-menu">Медиа</a><ul class="sub-menu"><li><a href="/media/news/">Новости</a></li><li><a href="/media/announcements/">Анонсы</a></li><li><a href="/media/smi/">СМИ</a></li><li><a href="/media/photo-gallery/">Фотогалерея</a></li><li><a href="/media/video-gallery/">Видеогалерея</a></li><li><a href="/media/tv-gallery/"><i class="p-icon"></i> новости</a></li></ul></li></ul></nav></div>
+</div>
+</div>
+</header>
+<!-- header -->
+  <!-- content -->
+  <main id="content">
+			 <!-- page -->
+<div class="rev_slider_wrapper">
+<div id="main-slider" class="rev_slider dark-color custom-polytech-skin">
+          <ul>
+												<li     id="bx_3218110189_266794"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/ef5/5.jpg"       >
+													<a href="https://media.spbstu.ru/news/research/136/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>											</li>
+												<li     id="bx_3218110189_283652"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/45f/37.jpg"       >
+													 <a href="https://www.science-fest.ru/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a> 											</li>
+												<li     id="bx_3218110189_265453"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/da8/245.jpg"       >
+													<a href="http://scb-polytech.power-m.ru/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a> 											</li>
+												<li     id="bx_3218110189_295169"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/082/246.jpg"       >
+													 <!--    	
+<div class="tp-caption sfl" data-x="center" data-y="top" data-hoffset="500" data-voffset="100" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+ 
+                <div class="slide_info_bg_white">
+ <a href="/freshman/"   target="_blank" >
+                 <span class="event_date">САЙТ ДЛЯ ПЕРВОКУРСНИКОВ</span>
+                   </a>
+                   </div>
+              </div>    -->														<!--    
+<div class="tp-caption sfl" data-x="center" data-y="top" data-hoffset="500" data-voffset="200" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+ 
+                <div class="slide_info_bg_dark">
+ <a href="https://www.youtube.com/watch?v=6v00nCiYGFY&feature=youtu.be"   target="_blank" >
+                 <span class="event_date">ОНЛАЙН-ТРАНСЛЯЦИЯ <br>ДЕНЬ ЗНАНИЙ В ПОЛИТЕХЕ</span>
+                   </a>
+                   </div>
+              </div>  -->														 <div class="tp-caption"
+     data-speed="700"
+     data-start="1200"
+  data-x="['right','right','right','right']"
+                data-hoffset="['200','100','100','100']"
+		data-y="['top',top','top','top]"
+		data-voffset="['150','150','150','150']"
+	 data-fontsize="['30','30','30','26']"
+	 data-lineheight="['32','22','22','20']"
+	 data-transform_idle="o:1;"
+	data-transform_in="y:20px;sX:0.9;sY:0.9;opacity:0;s:1000;e:Power4.easeOut;"
+	  data-transform_out="opacity:0;s:300;"
+	 data-splitin="none"
+	 data-splitout="none"
+	 data-color="#fff" style="z-index: 8">
+	 <a href="/freshman/" target="_blank" class="butn butn-round">САЙТ ДЛЯ ПЕРВОКУРСНИКОВ</a></div>													 <div class="tp-caption"
+     data-speed="700"
+     data-start="1200"
+  data-x="['right','right','right','right']"
+                data-hoffset="['200','100','100','100']"
+		data-y="['top',top','top','top']"
+		data-voffset="['250','250','250','350']"
+	 data-fontsize="['30','30','30','26']"
+	 data-lineheight="['32','22','22','20']"
+	 data-transform_idle="o:1;"
+	data-transform_in="y:20px;sX:0.9;sY:0.9;opacity:0;s:1000;e:Power4.easeOut;"
+	  data-transform_out="opacity:0;s:300;"
+	 data-splitin="none"
+	 data-splitout="none"
+	 data-color="#fff" style="z-index: 8">
+	 <a href="https://www.youtube.com/watch?v=6v00nCiYGFY&feature=youtu.be" target="_blank" class="butn butn-round">ОНЛАЙН-ТРАНСЛЯЦИЯ  ДЕНЬ ЗНАНИЙ В ПОЛИТЕХЕ</a></div>											</li>
+												<li     id="bx_3218110189_287884"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/ad2/181.jpg"       >
+													<div class="tp-caption sfl" data-x="center" data-y="center" data-hoffset="350" data-voffset="100" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+ 
+                <div class="slide_info_bg_dark">
+ <a href="https://enroll.spbstu.ru/"   target="_blank" >
+                 <span class="event_date">Личный кабинет абитуриента</span>
+                   </a>
+                   </div>
+              </div>													<div class="tp-caption sfl" data-x="center" data-y="center" data-hoffset="350" data-voffset="200" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                <div class="slide_info_bg_dark">
+ <a href="https://www.spbstu.ru/abit/bachelor/"   target="_blank" >
+                 <span class="event_date">Поступаем онлайн</span>
+                </a>
+                   </div>
+              </div>											</li>
+												<li     id="bx_3218110189_246647"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/306/31.jpg"       >
+													<a href="https://www.youtube.com/watch?v=DtVgMkG0TkA" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>											</li>
+												<li     id="bx_3218110189_202115"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/ac5/95.jpg"       >
+													<div class="tp-caption sfl" data-x="center" data-y="top" data-hoffset="550" data-voffset="100" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+ 
+                <div class="slide_info_bg_dark">
+ <a href="/media/news/studencheskaya_zhizn/beginning-new-school-year-context-measures-prevent-spread-coronavirus/"   target="_blank" >
+                 <span class="event_date">Начало года</span>
+                   </a>
+                   </div>
+              </div>													<div class="tp-caption sfl" data-x="center" data-y="top" data-hoffset="550" data-voffset="200" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+ 
+                <div class="slide_info_bg_dark">
+ <a href="/media/news/education/vice-rector-elena-razinkina-who-why-distance-learning/"   target="_blank" >
+                 <span class="event_date">Вопрос-ответ</span>
+                   </a>
+                   </div>
+              </div>													 <div class="tp-caption sfl" data-x="center" data-y="top" data-hoffset="550" data-voffset="300" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+ 
+                <div class="slide_info_bg_dark">
+ <a href="/respiratory-disease-prevention/"   target="_blank" >
+                 <span class="event_date">#ПолитехПетрапротивCOVID</span>
+                   </a>
+                   </div>
+              </div>											</li>
+												<li     id="bx_3218110189_272101"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/cd5/20.jpg"       >
+													<a href="/media/announcements/partnership/mibf-2020/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>											</li>
+												<li     id="bx_3218110189_282753"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/a5d/150.jpg"       >
+													<a href="https://media.spbstu.ru/news/university/80/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a> 											</li>
+												<li     id="bx_3218110189_266365"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/6a0/282.jpg"       >
+													<a href="https://media.spbstu.ru/news/lady_in_science/124/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a> 											</li>
+												<li     id="bx_3218110189_274573"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/b73/209.jpg"       >
+													<a href="https://media.spbstu.ru/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a> 											</li>
+												<li     id="bx_3218110189_235410"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/3d5/9_may.jpg"    data-ease="Linear.easeNone"   >
+													<a href="/media/news/studencheskaya_zhizn/polytechnics-about-war/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>													<div class="tp-caption sfl" data-x="center" data-y="center" data-hoffset="-700" data-voffset="100" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                <div class="media-btn"><a href="/media/news/studencheskaya_zhizn/songs-great-victory-sound-polytech/" target="_blank">
+                 <span class="event_date" >Песни Великой Победы</span>  <span class="event_desc"> </span>
+                   </a></div></div>													<div class="tp-caption sfl" data-x="center" data-y="center" data-hoffset="-350" data-voffset="100" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                <div class="media-btn"><a href="https://www.youtube.com/watch?v=J4TWptQEhNo" target="_blank">
+                 <span class="event_date" >Поздравление ректора</span>  <span class="event_desc"> </span>
+                   </a></div></div>													<div class="tp-caption sfl" data-x="center" data-y="center" data-hoffset="700" data-voffset="100" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="200" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                <div class="media-btn"><a href="/media/news/studencheskaya_zhizn/newspaper-polytechnic-anniversary-issue-75th-anniversary-victory/" target="_blank">
+                 <span class="event_date" >Газета «Политехник» </span>  <span class="event_desc"> </span>
+                   </a></div></div>													<div class="tp-caption sfl" data-x="center" data-y="center" data-hoffset="350" data-voffset="100" data-speed="700" data-start="1200" data-easing="Power4.easeOut" data-endspeed="200" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                <div class="media-btn"><a href="https://youtu.be/E--iDpMApfs" target="_blank">
+                 <span class="event_date" >Бессмертный полк</span><br>
+                   </a></div></div>											</li>
+												<li     id="bx_3218110189_277859"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/699/184.jpg"       >
+													 <a href="/respiratory-disease-prevention/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>											</li>
+												<li     id="bx_3218110189_277698"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/f15/199.jpg"       >
+													<a href="/media/news/achievements/the-rating-polytech-among-leaders-russian-federation-engineering-computer-sciences/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>											</li>
+												<li data-transition="cube"    id="bx_3218110189_172980"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/0e4/311.jpg"  data-bgfit="cover"  data-ease="Linear.easeNone"   >
+													<a href="/media/news/achievements/polytech-recognized-best-university-petersburg/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>											</li>
+												<li     id="bx_3218110189_259862"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/c98/48.jpg"       >
+													<a href="https://media.spbstu.ru/news/realgreat/138/" target="_blank" style="width:100%; height:100%; display:block;position:absolute; top:0;bottom:0;"> </a>											</li>
+												<li data-transition="cube"    id="bx_3218110189_181875"> 
+						<!-- MAIN IMAGE --> 
+						<img alt="" src="/upload/iblock/35e/shanghai.jpg"       >
+													<div class="tp-caption" 
+                      data-x="center" 
+                      data-y="top"
+                      data-hoffset="0px"
+                      data-voffset="200px"
+                      data-fontsize="'60','36','24','20'"
+                      data-fontweight="700"
+                      data-color="#fff"
+style="text-shadow:0 2px 3px rgba(0,0,0,0.5)"
+                      data-transform_idle="o:1;"
+                      data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;"
+                      data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                      data-start="1000"><a href="/international-cooperation/international-activities/ro/welcome-to-director/" target="_blank">Представительство СПбПУ в КНР г. Шанхае</a></div>
+											</li>
+							</ul>
+</div>
+	</div>
+<div class="polytech_mission"><div class="mission-link"><a href="/respiratory-disease-prevention/" style="color:#fff;"   target="_blank" >Меры по предотвращению коронавирусной инфекции</a></div></div>
+
+ <!--  <div class="polytech_mission"><div class="mission-link">ВЕЛИКИМ БЫТЬ !</div></div> -->	  
+    <section class="polytech-media container">
+      <div class="row">
+          <div class="col-md-12">
+<div class="dropdown clearfix">
+<div class="dropdown-toggle clearfix" id="dropdownTab" data-toggle="dropdown" aria-expanded="true" role="navigation"><span>Новости</span><i class="fa fa-angle-down"></i></div>
+      <ul id="media-filter" class="nav nav-tabs" role="tablist" aria-labelledby="dropdownTab">
+        <li class="active"><a href="#news-tab" role="tab" data-toggle="tab">Новости</a></li>
+        <li class=""><a href="#events-tab" role="tab" data-toggle="tab">Анонсы</a></li>
+        <li class=""> <a href="#mm-tab" role="tab" data-toggle="tab">СМИ</a> </li>
+ 
+        <li class=""> <a href="#gall-tab" role="tab" data-toggle="tab">Фото</a> </li>
+        <li class=""> <a href="#video-tab" role="tab" data-toggle="tab">Видео</a> </li>
+        <li class=""> <a href="#publ-tab" role="tab" data-toggle="tab">Издания</a> </li>
+        <li class=""> <a href="#pnews-tab" role="tab" data-toggle="tab"><i class="p-icon"></i> новости</a> </li>
+      </ul>
+      <div class="tab-external"><a href="/media/news/">все <span>новости</span><i class="fa fa-angle-right"></i></a></div>
+</div>
+    <div id="myTabContent" class="tab-content">
+        <!-- News carousel -->
+		<div class="tab-pane fade active in" id="news-tab">
+		        
+    <div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="5" data-polytech_items-sm="4" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/education/polytech-academy-digital-technologies-will-cooperate/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/8c3/300_200_2/56.jpg" alt="Политех и Академия цифровых технологий будут сотрудничать ">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-edu">Образование</span>
+			        </div>
+        <div class="article-date">Пятница, 4 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/education/polytech-academy-digital-technologies-will-cooperate/">Политех и Академия цифровых технологий будут сотрудничать </a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/international_activities/cooperation-spbpu-germany-pandemic-successful-results-everything/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/316/300_200_2/49.jpg" alt="Сотрудничество СПбПУ и Германии во время пандемии: успешные результаты, несмотря ни на что">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-int">Международная деятельность</span>
+			        </div>
+        <div class="article-date">Пятница, 4 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/international_activities/cooperation-spbpu-germany-pandemic-successful-results-everything/">Сотрудничество СПбПУ и Германии во время пандемии: успешные результаты, несмотря ни на что</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://media.spbstu.ru/news/realgreat/138/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/10c/300_200_2/47.jpg" alt="Кибернетика как суперсила">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-politech-media">Политех МЕДИА</span>
+			        </div>
+        <div class="article-date">Пятница, 4 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://media.spbstu.ru/news/realgreat/138/" target="_blank">Кибернетика как суперсила</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/partnership/polytech-voenmech-successfully-developing-cooperation/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/9bd/300_200_2/46.jpg" alt="Политех и Военмех успешно развивают сотрудничество">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Пятница, 4 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/partnership/polytech-voenmech-successfully-developing-cooperation/">Политех и Военмех успешно развивают сотрудничество</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/studencheskaya_zhizn/spbpu-rector-ordered-organize-influenza-vaccination/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/a3c/300_200_2/44.jpg" alt="Ректор СПбПУ поручил организовать вакцинацию от гриппа">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Пятница, 4 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/studencheskaya_zhizn/spbpu-rector-ordered-organize-influenza-vaccination/">Ректор СПбПУ поручил организовать вакцинацию от гриппа</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/partnership/spbpu-kbsu-berbekov-agreement-engineering-center/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/93b/300_200_2/40.jpg" alt="СПбПУ и Кабардино-Балкарский государственный университет им. Х.М. Бербекова заключили соглашение о создании университетского зеркального инжинирингового центра">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Четверг, 3 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/partnership/spbpu-kbsu-berbekov-agreement-engineering-center/">СПбПУ и Кабардино-Балкарский государственный университет им. Х.М. Бербекова заключили соглашение о создании университетского зеркального инжинирингового центра</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/international_activities/polytechnic-university-congratulated-chinese-partner-opening-new-institute/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/094/300_200_2/38.jpg" alt="Политех поздравил китайского партнера с открытием нового института">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-int">Международная деятельность</span>
+			        </div>
+        <div class="article-date">Четверг, 3 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/international_activities/polytechnic-university-congratulated-chinese-partner-opening-new-institute/">Политех поздравил китайского партнера с открытием нового института</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/education/andrey-rudskoy-interview-raex-rating-agency/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/c57/300_200_2/34.jpg" alt="Андрей Рудской дал интервью рейтинговому агентству RAEX">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-edu">Образование</span>
+			        </div>
+        <div class="article-date">Четверг, 3 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/education/andrey-rudskoy-interview-raex-rating-agency/">Андрей Рудской дал интервью рейтинговому агентству RAEX</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/education/experts-leading-russian-universities-discussed-readiness-fall-semester/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/479/300_200_2/32.jpg" alt="Эксперты из ведущих российских вузов обсудили готовность к осеннему семестру ">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-edu">Образование</span>
+			        </div>
+        <div class="article-date">Четверг, 3 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/education/experts-leading-russian-universities-discussed-readiness-fall-semester/">Эксперты из ведущих российских вузов обсудили готовность к осеннему семестру </a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/partnership/energoholding-rushydro-information-coworking-space-polytech/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/806/300_200_2/26.jpg" alt="Энергохолдинг РусГидро открыл информационный коворкинг в Политехе">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Среда, 2 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/partnership/energoholding-rushydro-information-coworking-space-polytech/">Энергохолдинг РусГидро открыл информационный коворкинг в Политехе</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/achievements/spbpu-driver-russian-engineering-education-the-ranking/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/667/300_200_2/24.jpg" alt="СПбПУ – драйвер российского инженерного образования в международном рейтинге Times Higher Education">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-ach">Достижения</span>
+			        </div>
+        <div class="article-date">Среда, 2 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/achievements/spbpu-driver-russian-engineering-education-the-ranking/">СПбПУ – драйвер российского инженерного образования в международном рейтинге Times Higher Education</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://media.spbstu.ru/news/research/137/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/9d4/300_200_2/23.jpg" alt="Ученые СПбПУ обнаружили уникальные пластические свойства алюминия">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-politech-media">Политех МЕДИА</span>
+			        </div>
+        <div class="article-date">Среда, 2 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://media.spbstu.ru/news/research/137/" target="_blank">Ученые СПбПУ обнаружили уникальные пластические свойства алюминия</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/international_activities/volunteers-polytech-gratitude-university-leadership/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/fc8/300_200_2/22.jpg" alt="Волонтеры Политеха получили благодарственные грамоты от руководства университета">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-int">Международная деятельность</span>
+			        </div>
+        <div class="article-date">Среда, 2 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/international_activities/volunteers-polytech-gratitude-university-leadership/">Волонтеры Политеха получили благодарственные грамоты от руководства университета</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/studencheskaya_zhizn/september-1-2020/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/fd8/300_200_2/7.jpg" alt="Начнём, пожалуй!">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/studencheskaya_zhizn/september-1-2020/">Начнём, пожалуй!</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/other/andrey-rudskoy-congratulated-university-status-world-class-scientific-center-advanced-digital-technologies/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/718/300_200_2/4.jpg" alt="Андрей Рудской поздравил университет с присвоением ему статуса научного центра мирового уровня «Передовые цифровые технологии»">
+						</a>
+			
+  
+
+ 
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/other/andrey-rudskoy-congratulated-university-status-world-class-scientific-center-advanced-digital-technologies/">Андрей Рудской поздравил университет с присвоением ему статуса научного центра мирового уровня «Передовые цифровые технологии»</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/international_activities/international-science-technology-summer-camp-summary-activities/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/872/300_200_2/254.jpg" alt="Международная политехническая летняя школа: итоги сезона">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-int">Международная деятельность</span>
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/international_activities/international-science-technology-summer-camp-summary-activities/">Международная политехническая летняя школа: итоги сезона</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://media.spbstu.ru/news/research/136/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/3a3/300_200_2/1.jpg" alt="Санкт-Петербургский политехнический университет Петра Великого получил статус научного центра мирового уровня «Передовые цифровые технологии»">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-politech-media">Политех МЕДИА</span>
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://media.spbstu.ru/news/research/136/" target="_blank">Санкт-Петербургский политехнический университет Петра Великого получил статус научного центра мирового уровня «Передовые цифровые технологии»</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/studencheskaya_zhizn/polytech-will-be-105-more-lieutenants/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/c19/300_200_2/248.jpg" alt="В Политехе станет на 105 лейтенантов больше">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Понедельник, 31 Августа 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/studencheskaya_zhizn/polytech-will-be-105-more-lieutenants/">В Политехе станет на 105 лейтенантов больше</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/partnership/power-machines-student-design-bureau-polytech/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/658/300_200_2/244.jpg" alt="«Силовые машины» откроют студенческое конструкторское бюро в Политехе">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Понедельник, 31 Августа 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/partnership/power-machines-student-design-bureau-polytech/">«Силовые машины» откроют студенческое конструкторское бюро в Политехе</a>	
+			
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+		<a href="/media/news/studencheskaya_zhizn/what-does-wind-change-lead-to/">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/970/300_200_2/239.jpg" alt="К чему приводит «ветер ПИремен»?">
+						</a>
+			
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Пятница, 28 Августа 2020</div>
+        <h4 class="article-title">
+            		<a href="/media/news/studencheskaya_zhizn/what-does-wind-change-lead-to/">К чему приводит «ветер ПИремен»?</a>	
+			
+         </h4>
+    </div>
+	</div>
+		</div>
+        <!-- / News carousel -->
+		<!-- Anonse carousel -->
+		<div class="tab-pane fade" id="events-tab">
+		
+   <div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="3" data-polytech_items-sm="2" data-polytech_items-xs="1" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="false">
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">06</span> <span class="event-month">дек</span></div>
+				<div class="event-desc"><a href="/media/announcements/education/open-day-01-12-19/">День открытых дверей университета</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">07</span> <span class="event-month">ноя</span></div>
+				<div class="event-desc"><a href="/media/announcements/science-and-innovation/digital-ball-20/">«Цифровой бал» и награждение победителей молодежной премии «Будущее финансового рынка: цифровизация»</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">06</span> <span class="event-month">окт</span></div>
+				<div class="event-desc"><a href="/media/announcements/science-and-innovation/virology-days-2020/">Международный форум «Дни вирусологии (Virology Days) – 2020»</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">30</span> <span class="event-month">сен</span></div>
+				<div class="event-desc"><a href="/media/announcements/conference/fire-protection-materials-structures-20/">I Международная научно-практическая конференция «Огнезащита материалов и конструкций»</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">24</span> <span class="event-month">сен</span></div>
+				<div class="event-desc"><a href="/media/announcements/conference/global-challenges-digital-transformation-markets-2020/">Конференция “Global Challenges of Digital Transformation of Markets-2020”</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">24</span> <span class="event-month">сен</span></div>
+				<div class="event-desc"><a href="/media/announcements/conference/digtechimc-2020/">DigTechIMC-2020  </a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">15</span> <span class="event-month">сен</span></div>
+				<div class="event-desc"><a href="/media/announcements/competitions_grants/open-doors-russian-scholarship-project/">Ведущие вузы России приглашают иностранных студентов</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">02</span> <span class="event-month">сен</span></div>
+				<div class="event-desc"><a href="/media/announcements/partnership/mibf-2020/">Издательско-полиграфический центр Санкт-Петербургского политехнического университета Петра Великого – участник Московской международной книжной ярмарки (ММКЯ-2020)</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">23</span> <span class="event-month">авг</span></div>
+				<div class="event-desc"><a href="/media/announcements/international-activities/army-2020/">Политех – участник Международного военно-технического форума «Армия-2020»</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">19</span> <span class="event-month">авг</span></div>
+				<div class="event-desc"><a href="/media/announcements/education/webinar-how-organize-educational-process-conditions-uncertainty/">Вебинар «Как организовать учебный процесс в условиях неопределённости»</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">06</span> <span class="event-month">июл</span></div>
+				<div class="event-desc"><a href="/media/announcements/competitions_grants/polytech-project-20/">Грантовый конкурс Polytech Project </a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">21</span> <span class="event-month">июн</span></div>
+				<div class="event-desc"><a href="/media/announcements/education/international-summer-school-conference-actual-problems-mechanics/">Международная летняя школа-конференция «Актуальные проблемы механики»</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">21</span> <span class="event-month">июн</span></div>
+				<div class="event-desc"><a href="/media/announcements/conference/international-scientific-conference-actual-problems-mechanics-online-format/">Международная научная конференция «Актуальные проблемы механики» пройдет в онлайн-формате</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">09</span> <span class="event-month">июн</span></div>
+				<div class="event-desc"><a href="/media/announcements/competitions_grants/programme-start/">Фонд объявляет о начале конкурсного отбора по программе «Старт»</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">05</span> <span class="event-month">июн</span></div>
+				<div class="event-desc"><a href="/media/announcements/science-and-innovation/call-applications-competitive-selection-council-young-scientists/">Прием заявок на участие в конкурсном отборе в Совет молодых ученых</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">05</span> <span class="event-month">июн</span></div>
+				<div class="event-desc"><a href="/media/announcements/conference/round-table-interaction-chairs-strategic-planning-sustainable-development/">Круглый стол «Взаимодействие кафедр ЮНЕСКО с целью стратегического планирования и устойчивого развития»</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">25</span> <span class="event-month">мая</span></div>
+				<div class="event-desc"><a href="/media/announcements/competitions_grants/umnik-photonics/">Прием заявок на конкурс «УМНИК – Фотоника» </a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">16</span> <span class="event-month">мая</span></div>
+				<div class="event-desc"><a href="/media/announcements/conference/humanitarian-readings-polytech/">Гуманитарные чтения в Политехническом университете</a></div>
+			</div>
+	</div>		
+		<div class="item">		
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">12</span> <span class="event-month">мая</span></div>
+				<div class="event-desc"><a href="/media/announcements/education/webinar-spbpu-organization-state-final-certification-conditions-distance-learning/">Вебинар от СПбПУ по вопросам организации государственной итоговой аттестации в условиях дистанционного обучения</a></div>
+			</div>
+			
+				
+			<div class="event-block">
+				<div class="event-square"> <span class="event-data">09</span> <span class="event-month">мая</span></div>
+				<div class="event-desc"><a href="/media/announcements/competitions_grants/future-russia-contest-20/">Конкурс «Россия, устремленная в будущее»</a></div>
+			</div>
+	</div>		
+	</div>
+
+		</div>
+		<!-- / Anonse carousel -->
+		<!-- SMI carousel -->
+		<div class="tab-pane fade" id="mm-tab">
+                
+    <div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="5" data-polytech_items-sm="4" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://www.rbc.ru/spb_sz/02/09/2020/5f4fa2a89a794700b06c4ef1"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/659/300_200_2/61.jpg" alt="Петербургский электромобиль выйдет в массовое производство. РБК ">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Среда, 2 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://www.rbc.ru/spb_sz/02/09/2020/5f4fa2a89a794700b06c4ef1" target="_blank">Петербургский электромобиль выйдет в массовое производство. РБК </a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://topspb.tv/news/2020/09/2/peterburgskij-politeh-podnyalsya-na-dvesti-pozicij-v-rejtinge-times-higher-education/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/384/300_200_2/60.jpg" alt="Петербургский Политех поднялся на двести позиций в рейтинге Times Higher Education. Телеканал «Санкт-Петербург»">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-sci">Наука и инновации</span>
+			        </div>
+        <div class="article-date">Среда, 2 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://topspb.tv/news/2020/09/2/peterburgskij-politeh-podnyalsya-na-dvesti-pozicij-v-rejtinge-times-higher-education/" target="_blank">Петербургский Политех поднялся на двести позиций в рейтинге Times Higher Education. Телеканал «Санкт-Петербург»</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://www.poisknews.ru/edu/peterburgskij-politeh-poluchil-status-nauchnogo-czentra-mirovogo-urovnya-peredovye-czifrovye-tehnologii/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/256/300_200_2/78.jpg" alt="Петербургский Политех получил статус научного центра мирового уровня «Передовые цифровые технологии».  ПОИСК">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-ach">Достижения</span>
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://www.poisknews.ru/edu/peterburgskij-politeh-poluchil-status-nauchnogo-czentra-mirovogo-urovnya-peredovye-czifrovye-tehnologii/" target="_blank">Петербургский Политех получил статус научного центра мирового уровня «Передовые цифровые технологии».  ПОИСК</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://www.fontanka.ru/2020/09/01/69452237/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/b4c/300_200_2/24.jpg" alt="Петербургский Политех займется созданием научного центра мирового уровня «Передовые цифровые технологии». Фонтанка.ru ">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://www.fontanka.ru/2020/09/01/69452237/" target="_blank">Петербургский Политех займется созданием научного центра мирового уровня «Передовые цифровые технологии». Фонтанка.ru </a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://gorod-plus.tv/news/78438"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/b59/300_200_2/62.jpg" alt="В Политехе появится коворкинг-зона от компании РусГидро. Город+">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://gorod-plus.tv/news/78438" target="_blank">В Политехе появится коворкинг-зона от компании РусГидро. Город+</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://tass.ru/obschestvo/9335431"  target="_blank">
+							<img class="img-responsive" src="/upload/iblock/816/f8cd68ffbee7d83eb5bfc7f757343cd7.jpg" alt="&quot;Силовые машины&quot; откроют студенческое конструкторское бюро в Петербургском Политехе. ТАСС">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Вторник, 1 Сентября 2020</div>
+        <h4 class="article-title">
+             <a href="https://tass.ru/obschestvo/9335431" target="_blank">&quot;Силовые машины&quot; откроют студенческое конструкторское бюро в Петербургском Политехе. ТАСС</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://www.eprussia.ru/news/base/2020/8866604.htm"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/650/300_200_2/6.jpg" alt="«Силовые машины» и Петербургский Политех расширяют сотрудничество.  Энергетика и промышленность России">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-part">Партнёрство</span>
+			        </div>
+        <div class="article-date">Понедельник, 31 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://www.eprussia.ru/news/base/2020/8866604.htm" target="_blank">«Силовые машины» и Петербургский Политех расширяют сотрудничество.  Энергетика и промышленность России</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://ria.ru/20200829/obuchenie-1576280062.html"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/f95/300_200_2/261.jpg" alt="Студенты Петербургского политеха обучаются через интерактивные игры. РИА Новости">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-edu">Образование</span>
+			        </div>
+        <div class="article-date">Суббота, 29 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://ria.ru/20200829/obuchenie-1576280062.html" target="_blank">Студенты Петербургского политеха обучаются через интерактивные игры. РИА Новости</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="http://tv-gubernia.ru/novosti/rajony/hoholskij/v_voronezhskoj_oblasti_v_kostenkah_zavershaetsya_sezon_raskopok/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/cfc/300_200_2/262.jpg" alt="В Воронежской области в Костенках завершается сезон раскопок. ТВ «Губерния» ">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Пятница, 28 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="http://tv-gubernia.ru/novosti/rajony/hoholskij/v_voronezhskoj_oblasti_v_kostenkah_zavershaetsya_sezon_raskopok/" target="_blank">В Воронежской области в Костенках завершается сезон раскопок. ТВ «Губерния» </a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://spbdnevnik.ru/news/2020-08-25/peterburg-ukrasili-graffiti-s-nobelevskim-laureatom-zhoresom-alferovym"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/89d/300_200_2/119.jpg" alt="Петербург украсили граффити с нобелевским лауреатом Жоресом Алферовым.  Петербургский дневник">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Вторник, 25 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://spbdnevnik.ru/news/2020-08-25/peterburg-ukrasili-graffiti-s-nobelevskim-laureatom-zhoresom-alferovym" target="_blank">Петербург украсили граффити с нобелевским лауреатом Жоресом Алферовым.  Петербургский дневник</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://spbvedomosti.ru/news/gorod/v-peterburge-poyavilos-graffiti-s-izobrazheniem-zhoresa-alferova/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/e2d/300_200_2/179.jpg" alt="В Петербурге появилось граффити с изображением Жореса Алферова. Санкт-Петербургские ведомости">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Воскресенье, 23 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://spbvedomosti.ru/news/gorod/v-peterburge-poyavilos-graffiti-s-izobrazheniem-zhoresa-alferova/" target="_blank">В Петербурге появилось граффити с изображением Жореса Алферова. Санкт-Петербургские ведомости</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://indicator.ru/chemistry-and-materials/alyuminiya-unikalnye-plasticheskie-svoistva-21-08-2020.htm"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/6be/300_200_2/178.jpg" alt="У алюминия нашли уникальные пластические свойства. Indicator.ru">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-sci">Наука и инновации</span>
+			        </div>
+        <div class="article-date">Пятница, 21 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://indicator.ru/chemistry-and-materials/alyuminiya-unikalnye-plasticheskie-svoistva-21-08-2020.htm" target="_blank">У алюминия нашли уникальные пластические свойства. Indicator.ru</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://rg.ru/2020/08/18/v-rossijskih-vuzah-poiaviatsia-30-unikalnyh-obrazovatelnyh-programm.html"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/9ba/300_200_2/136.jpg" alt="В российских вузах появятся 30 уникальных образовательных программ. Российская газета">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-edu">Образование</span>
+			        </div>
+        <div class="article-date">Вторник, 18 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://rg.ru/2020/08/18/v-rossijskih-vuzah-poiaviatsia-30-unikalnyh-obrazovatelnyh-programm.html" target="_blank">В российских вузах появятся 30 уникальных образовательных программ. Российская газета</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://www.poisknews.ru/news/kanikuly-otmenyayutsya-mezhdunarodnaya-letnyaya-politehnicheskaya-shkola-raspahnula-virtualnye-dveri/"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/91d/300_200_2/78.jpg" alt="Каникулы отменяются. Международная летняя политехническая школа распахнула виртуальные двери. ПОИСК">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-int">Международная деятельность</span>
+			        </div>
+        <div class="article-date">Понедельник, 17 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://www.poisknews.ru/news/kanikuly-otmenyayutsya-mezhdunarodnaya-letnyaya-politehnicheskaya-shkola-raspahnula-virtualnye-dveri/" target="_blank">Каникулы отменяются. Международная летняя политехническая школа распахнула виртуальные двери. ПОИСК</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://tass.ru/obschestvo/9208175"  target="_blank">
+							<img class="img-responsive" src="/upload/iblock/1a5/f8cd68ffbee7d83eb5bfc7f757343cd7.jpg" alt="В петербургском Политехе появилось граффити с изображением нобелевского лауреата Алферова. ТАСС">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Суббота, 15 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://tass.ru/obschestvo/9208175" target="_blank">В петербургском Политехе появилось граффити с изображением нобелевского лауреата Алферова. ТАСС</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://futurerussia.gov.ru/nacionalnye-proekty/rossijskie-ucenye-obnaruzili-novye-opticeskie-svojstva-atomov"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/da2/300_200_2/105.jpg" alt="Российские ученые обнаружили новые оптические свойства атомов. Национальные проекты: будущее России">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-sci">Наука и инновации</span>
+			        </div>
+        <div class="article-date">Четверг, 13 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://futurerussia.gov.ru/nacionalnye-proekty/rossijskie-ucenye-obnaruzili-novye-opticeskie-svojstva-atomov" target="_blank">Российские ученые обнаружили новые оптические свойства атомов. Национальные проекты: будущее России</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://nauka.tass.ru/nauka/9176013"  target="_blank">
+							<img class="img-responsive" src="/upload/iblock/8a2/f8cd68ffbee7d83eb5bfc7f757343cd7.jpg" alt="В России впервые появится &quot;цифровой двойник&quot; дизельного двигателя.  ТАСС">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-sci">Наука и инновации</span>
+			        </div>
+        <div class="article-date">Вторник, 11 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://nauka.tass.ru/nauka/9176013" target="_blank">В России впервые появится &quot;цифровой двойник&quot; дизельного двигателя.  ТАСС</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://energybase.ru/news/companies/cistema-energoeffektivnyh-besprovodnyh-infrakrasnyh-gazovyh-datcikov-2020-08-06"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/286/300_200_2/70.jpg" alt="Cистема энергоэффективных беспроводных инфракрасных газовых датчиков. Energybase.ru">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-sci">Наука и инновации</span>
+			        </div>
+        <div class="article-date">Четверг, 6 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://energybase.ru/news/companies/cistema-energoeffektivnyh-besprovodnyh-infrakrasnyh-gazovyh-datcikov-2020-08-06" target="_blank">Cистема энергоэффективных беспроводных инфракрасных газовых датчиков. Energybase.ru</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://78.ru/news/2020-08-03/komanda_politeha_nachala_stroit_novii_bolid_dlya_uchastiya_v_mezhdunarodnih_sorevnovaniyah"  target="_blank">
+							<img class="img-responsive" src="/upload/resize_cache/iblock/019/300_200_2/50.jpg" alt="Команда Политеха начала строить новый болид для участия в международных соревнованиях.  Телеканал 78">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-stud">Университетская жизнь </span>
+			        </div>
+        <div class="article-date">Вторник, 4 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://78.ru/news/2020-08-03/komanda_politeha_nachala_stroit_novii_bolid_dlya_uchastiya_v_mezhdunarodnih_sorevnovaniyah" target="_blank">Команда Политеха начала строить новый болид для участия в международных соревнованиях.  Телеканал 78</a>	
+ 
+         </h4>
+    </div>
+		<div class="item article-item">
+        <div class="article-img">
+
+<a href="https://tass.ru/obschestvo/9112711"  target="_blank">
+							<img class="img-responsive" src="/upload/iblock/575/f8cd68ffbee7d83eb5bfc7f757343cd7.jpg" alt="Петербургский политех получил почти 450 дополнительных бюджетных мест в новом учебном году.  ТАСС">
+						</a> 
+ 
+  
+
+ 
+			            <span class="article-tag-label cat-edu">Образование</span>
+			        </div>
+        <div class="article-date">Понедельник, 3 Августа 2020</div>
+        <h4 class="article-title">
+             <a href="https://tass.ru/obschestvo/9112711" target="_blank">Петербургский политех получил почти 450 дополнительных бюджетных мест в новом учебном году.  ТАСС</a>	
+ 
+         </h4>
+    </div>
+	</div>
+		</div>
+		<!-- / SMI carousel -->
+   
+		<!-- PHOTO GALLERY carousel -->
+		<div class="tab-pane fade" id="gall-tab">
+		<div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="4" data-polytech_items-sm="3" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+	<div class="item article-item" id="bx_4210597783_6068"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/b90/b32i0857.jpg"  alt="В Политехе станет на 105 лейтенантов больше">
+<a href="/media/photo-gallery/6068/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6068/" class="album-title">В Политехе станет на 105 лейтенантов больше</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6070"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/ec8/dsc_2749.jpg"  alt="Ректор СПбПУ принял участие в круглом столе «Российской газеты»">
+<a href="/media/photo-gallery/6070/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6070/" class="album-title">Ректор СПбПУ принял участие в круглом столе «Российской газеты»</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6066"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/116/dsc_2824.jpg"  alt="В Петербургском политехе побывал с дружеским визитом ректор Томского политеха">
+<a href="/media/photo-gallery/6066/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6066/" class="album-title">В Петербургском политехе побывал с дружеским визитом ректор Томского политеха</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6069"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/f98/dsc_2433.jpg"  alt="Защита проектов финалистов Всероссийских соревнований по морской надводной робототехнике среди учащихся образовательных учреждений">
+<a href="/media/photo-gallery/6069/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6069/" class="album-title">Защита проектов финалистов Всероссийских соревнований по морской надводной робототехнике среди учащихся образовательных учреждений</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6067"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/fd6/dsc_2308.jpg"  alt="Анатолий Турчак стал Почетным доктором СПбПУ">
+<a href="/media/photo-gallery/6067/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6067/" class="album-title">Анатолий Турчак стал Почетным доктором СПбПУ</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6022"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/9ec/b32i5272.jpg"  alt="Торжественная церемония вручения красных дипломов выпускникам-медалистам">
+<a href="/media/photo-gallery/6022/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6022/" class="album-title">Торжественная церемония вручения красных дипломов выпускникам-медалистам</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6030"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/f31/dsc_1485.jpg"  alt="Политех на выставке ВМФ в Главном Адмиралтействе">
+<a href="/media/photo-gallery/6030/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6030/" class="album-title">Политех на выставке ВМФ в Главном Адмиралтействе</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6029"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/960/b32i5160.jpg"  alt="Студенты Военно-учебного центра СПбПУ принесли присягу">
+<a href="/media/photo-gallery/6029/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6029/" class="album-title">Студенты Военно-учебного центра СПбПУ принесли присягу</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_6031"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/9a6/dsc_9210.jpg"  alt="Ректор СПбПУ академик РАН Андрей РУДСКОЙ в Доме журналистов">
+<a href="/media/photo-gallery/6031/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/6031/" class="album-title">Ректор СПбПУ академик РАН Андрей РУДСКОЙ в Доме журналистов</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_5524"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/7db/584.jpg"  alt=" III Молодежный карьерный форум">
+<a href="/media/photo-gallery/5524/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/5524/" class="album-title"> III Молодежный карьерный форум</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_4410"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/1bf/757.jpg"  alt=" XXI Ассамблея молодых ученых и специалистов">
+<a href="/media/photo-gallery/4410/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/4410/" class="album-title"> XXI Ассамблея молодых ученых и специалистов</a>
+</div></div>	<div class="item article-item" id="bx_4210597783_5447"><div class="img-figure"><div class="article-img"><img  class="img-responsive" src="/upload/iblock/a47/724.jpg"  alt=" Визит генерального секретаря Российской ассоциации международного сотрудничества В. М. ПОЛОЗКОВА в СПбПУ">
+<a href="/media/photo-gallery/5447/"   title="Перейти на страницу альбома" class="" data-placement="bottom">
+<div class="rollover-content"></div></a>
+                            </div>
+<a href="/media/photo-gallery/5447/" class="album-title"> Визит генерального секретаря Российской ассоциации международного сотрудничества В. М. ПОЛОЗКОВА в СПбПУ</a>
+</div></div>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													</div>		</div>
+		<!-- / PHOTO GALLERY carousel -->
+		<!-- VIDEO GALLERY carousel -->
+		<div class="tab-pane fade" id="video-tab">
+			
+<div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="4" data-polytech_items-sm="3" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/1d4/580_352_2/144.jpg"  alt="«Я в науке»: часть 5">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=pBD9Cm0FoiU?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/in-science-5/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/in-science-5/" class="album-title">«Я в науке»: часть 5</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/12f/580_352_2/116.jpg"  alt="Граффити с Жоресом Алфёровым в #ПолитехПетра">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=TjWqHpbiddQ?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/graffiti-zhores-alferov/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/graffiti-zhores-alferov/" class="album-title">Граффити с Жоресом Алфёровым в #ПолитехПетра</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/fad/580_352_2/78.jpg"  alt="Полет над кампусом">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=6D_iskPXBno?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/flight-over-campus/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/flight-over-campus/" class="album-title">Полет над кампусом</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/e63/580_352_2/300.jpg"  alt="Lady in science: в экономике нельзя понять ничего, пока не поймешь всего">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=8lSYmNHcccE?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/lady-science-5/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/lady-science-5/" class="album-title">Lady in science: в экономике нельзя понять ничего, пока не поймешь всего</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/f81/580_352_2/198.jpg"  alt="Lady in science: для кого мозг – это целая вселенная">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=lm9-6b9Ccl0?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/lady-science-4/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/lady-science-4/" class="album-title">Lady in science: для кого мозг – это целая вселенная</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/3a1/580_352_2/145.jpg"  alt="Стань самим собой в #ПолитехПетра">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=DtVgMkG0TkA?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/education/become-yourself/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/education/become-yourself/" class="album-title">Стань самим собой в #ПолитехПетра</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/6b6/580_352_2/90.jpg"  alt="Lady in science: в соцветии физики">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=sNG-zfJLeKc?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/lady-science-3/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/lady-science-3/" class="album-title">Lady in science: в соцветии физики</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/317/580_352_2/13.jpg"  alt="Lady in science: о тех, кто хочет проникнуть в наномир">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=PXIjVudbJjQ?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/lady-in-science-2/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/lady-in-science-2/" class="album-title">Lady in science: о тех, кто хочет проникнуть в наномир</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/5d0/580_352_2/271.jpg"  alt="«Я в науке»: часть 4">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=s5dCY4TI9TY?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/in-science-4/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/in-science-4/" class="album-title">«Я в науке»: часть 4</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/a49/580_352_2/183.jpg"  alt="Я в науке»: часть 3">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=HX0-sp4Ftdg?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/in-science-3/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/in-science-3/" class="album-title">Я в науке»: часть 3</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/c48/580_352_2/111.jpg"  alt="«Я в науке»">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=XKvih-pPMBI?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/in-science-2/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/in-science-2/" class="album-title">«Я в науке»</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/938/580_352_2/281.jpg"  alt="Lady in science">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=jqJszm6ZdQg?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/lady-in-science/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/lady-in-science/" class="album-title">Lady in science</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/edc/580_352_2/130.jpg"  alt="Григорий Мамонтов: политехники о Великой Отечественной войне">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=itrLlZj0Q90?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/grigoriy-mamontov/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/grigoriy-mamontov/" class="album-title">Григорий Мамонтов: политехники о Великой Отечественной войне</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/019/580_352_2/58.jpg"  alt="Никита Чубур: политехники о Великой Отечественной войне">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=PKykQ-pde2Q?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/nikita-chubur/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/nikita-chubur/" class="album-title">Никита Чубур: политехники о Великой Отечественной войне</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/91c/580_352_2/1.jpg"  alt="Мария Завьялова: политехники о Великой Отечественной войне">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=VaEJGOV_92Y?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/mariya-zavyalova/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/mariya-zavyalova/" class="album-title">Мария Завьялова: политехники о Великой Отечественной войне</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/c35/580_352_2/164.jpg"  alt="Александр ЛИПОВСКИЙ: политехники о Великой Отечественной войне">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=gI2SzrBxVG0?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/aleksandr-lipovskiy/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/aleksandr-lipovskiy/" class="album-title">Александр ЛИПОВСКИЙ: политехники о Великой Отечественной войне</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/17e/580_352_2/120.jpg"  alt="Политехники о войне">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=wusLtlR_T_M?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/polytechnics-about-war/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/polytechnics-about-war/" class="album-title">Политехники о войне</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/8fa/580_352_2/41.jpg"  alt="Я в науке!">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=a42E_Slmplk?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/science-and-innovation/i-in-science/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/science-and-innovation/i-in-science/" class="album-title">Я в науке!</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/83b/580_352_2/68.jpg"  alt="Александр Кобышев: политехники о Великой Отечественной войне">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=Fl958QGssGM?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/aleksandr-kobyshev/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/aleksandr-kobyshev/" class="album-title">Александр Кобышев: политехники о Великой Отечественной войне</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/e3f/580_352_2/241.jpg"  alt="Андрей Тертерян: политехники о Великой Отечественной войне">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=wOvQvS6Luo8?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/video-gallery/student-life/andrey-terteryan/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/video-gallery/student-life/andrey-terteryan/" class="album-title">Андрей Тертерян: политехники о Великой Отечественной войне</a>
+					</div>
+		</div>			
+	</div>
+
+		</div>
+		<!-- / VIDEO GALLERY carousel -->
+		<!-- EDITIONS -->
+		<div class="tab-pane fade" id="publ-tab">
+        
+<div class="row"><div class="polytech_press">
+								<div class="col-md-4 item_press"><a href="http://engstroy.spbstu.ru/" target="_blank">Magazine of Civil Engineering</a></div>
+										<div class="col-md-4 item_press"><a href="http://mpm.spbstu.ru/ " target="_blank">Механика и физика материалов</a></div>
+										<div class="col-md-4 item_press"><a href="https://physmath.spbstu.ru/" target="_blank">Научно-технические ведомости СПбГПУ. Физико-математические науки</a></div>
+										<div class="col-md-4 item_press"><a href="https://engtech.spbstu.ru/" target="_blank">Материаловедение. Энергетика</a></div>
+										<div class="col-md-4 item_press"><a href="https://infocom.spbstu.ru/" target="_blank">Информатика, телекоммуникации и управление</a></div>
+										<div class="col-md-4 item_press"><a href="https://economy.spbstu.ru/" target="_blank">Научно-технические ведомости СПбГПУ. Экономические науки</a></div>
+										<div class="col-md-4 item_press"><a href="https://human.spbstu.ru/" target="_blank">Общество. Коммуникация. Образование</a></div>
+										<div class="col-md-4 item_press"><a href="http://unistroy.spbstu.ru/" target="_blank">Строительство уникальных зданий и сооружений</a></div>
+										<div class="col-md-4 item_press"><a href="http://jisp.ru/ " target="_blank">Проблемы информационной безопасности. Компьютерные системы</a></div>
+										<div class="col-md-4 item_press"><a href="http://tmm.spbstu.ru/" target="_blank">Теория механизмов и машин</a></div>
+										<div class="col-md-4 item_press"><a href="https://hum.spbstu.ru/voprosu_metodiki_prepodavaniya_v_vuze/" target="_blank">Вопросы методики преподавания в вузе</a></div>
+										<div class="col-md-4 item_press"><a href="http://alfabuild.spbstu.ru/" target="_blank">AlfaBuild</a></div>
+										<div class="col-md-4 item_press"><a href="/media/edition/polytechnic/">Газета &quot;Политехник&quot;</a></div>
+		</div></div>
+
+
+		</div>
+		<!-- / EDITIONS -->
+		<!--P News carousel -->
+		<div class="tab-pane fade" id="pnews-tab">
+			
+<div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="4" data-polytech_items-sm="3" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/e97/580_352_2/385.jpg"  alt="Пи-новости (февраль 2020)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=XHqZ_VqjjfY?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/02-20/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/02-20/" class="album-title">Пи-новости (февраль 2020)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/aff/580_352_2/180.jpg"  alt="Пи-новости (декабрь 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=6KLhnE3QL48?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/12-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/12-19/" class="album-title">Пи-новости (декабрь 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/ca9/580_352_2/180.jpg"  alt="Пи-новости (ноябрь 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=zgRFKAprZAI?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/11-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/11-19/" class="album-title">Пи-новости (ноябрь 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/277/580_352_2/180.jpg"  alt="Пи-новости (октябрь 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=tUmpqGPNr5U?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/10-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/10-19/" class="album-title">Пи-новости (октябрь 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/d84/580_352_2/180.jpg"  alt="Пи-новости (сентябрь 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=rql_o2cFyW8?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/09-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/09-19/" class="album-title">Пи-новости (сентябрь 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/0b0/580_352_2/180.jpg"  alt="Пи-новости (июнь 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=fP6ZJVPhNBg?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/06-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/06-19/" class="album-title">Пи-новости (июнь 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/504/580_352_2/180.jpg"  alt="Пи-новости (май 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=3vaidUViEMk?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/05-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/05-19/" class="album-title">Пи-новости (май 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/113/580_352_2/180.jpg"  alt="Пи-новости (апрель 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=hW0SDcAy8vw?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/04-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/04-19/" class="album-title">Пи-новости (апрель 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/854/580_352_2/180.jpg"  alt="Пи-новости (март 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=8R44-u7csUI?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/03-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/03-19/" class="album-title">Пи-новости (март 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/7bd/580_352_2/180.jpg"  alt="Пи-новости (февраль 2019)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=QyMtjMLL9-s?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/02-19/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/02-19/" class="album-title">Пи-новости (февраль 2019)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/8d3/580_352_2/180.jpg"  alt="Пи-новости (декабрь 2018)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=Fdb4ZJg-8rU?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/12-18/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/12-18/" class="album-title">Пи-новости (декабрь 2018)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/27b/580_352_2/180.jpg"  alt="Пи-новости (ноябрь 2018)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=oO5wKJN8b3U?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/11-18/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/11-18/" class="album-title">Пи-новости (ноябрь 2018)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/af7/580_352_2/180.jpg"  alt="Пи-новости (октябрь 2018)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=nZBdLDK9Ik4?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/10-2018/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/10-2018/" class="album-title">Пи-новости (октябрь 2018)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/968/580_352_2/180.jpg"  alt="Пи-новости (сентябрь 2018)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=xK27MRaO4Lc?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/09-2018/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/09-2018/" class="album-title">Пи-новости (сентябрь 2018)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/dea/580_352_2/180.jpg"  alt="Пи-новости (август 2018)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=S3ouiERd7JQ?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/08-2018/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/08-2018/" class="album-title">Пи-новости (август 2018)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/13a/580_352_2/180.jpg"  alt="Пи-новости (июнь 2018)">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=gdSc4Py1UWA?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/06-2018/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/06-2018/" class="album-title">Пи-новости (июнь 2018)</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/1d8/580_352_2/309.jpg"  alt="Сотрудники СПбПУ удостоены премии Правительства Санкт-Петербурга">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=ET1UFzvflLs?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/employees-spbpu-awarded-petersburg-government-prize/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/employees-spbpu-awarded-petersburg-government-prize/" class="album-title">Сотрудники СПбПУ удостоены премии Правительства Санкт-Петербурга</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/7a7/580_352_2/308.jpg"  alt="Концерт иностранных студентов СПбПУ">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=waoquOVkW34?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/concert-foreign-students-spbpu/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/concert-foreign-students-spbpu/" class="album-title">Концерт иностранных студентов СПбПУ</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/1c1/580_352_2/227.jpg"  alt="Награждение победителей конкурса грантов Президента РФ">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=-l4U-qeRkM0?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/grantees-president-russian-federation-six-young-scientists-polytechnic-university/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/grantees-president-russian-federation-six-young-scientists-polytechnic-university/" class="album-title">Награждение победителей конкурса грантов Президента РФ</a>
+					</div>
+		</div>			
+			<div class="item article-item">
+				<div class="img-figure">
+                	<div class="article-img">
+						 <img  class="img-responsive" src="/upload/resize_cache/iblock/fe2/580_352_2/105.jpg"  alt="Студенческий экономический форум в Политехе">
+                         <div class="rollover-content">
+
+                            <p class="icon-links">
+									<a href="https://www.youtube.com/watch?v=KRckSkjebIY?rel=0&amp;showinfo=0"  title="Просмотр" class="image-iframe" data-placement="left">
+										<i class="fa fa-play"></i>
+									</a>
+									<a href="/media/tv-gallery/tv-news/student-economic-forum-2018/"   title="Перейти к описанию видео" class="" data-placement="right">
+										<i class="fa fa-file-o"></i>
+									</a>
+								</p>
+							</div>
+                            </div>
+						<a href="/media/tv-gallery/tv-news/student-economic-forum-2018/" class="album-title">Студенческий экономический форум в Политехе</a>
+					</div>
+		</div>			
+	</div>
+
+		</div>
+      </div>
+</div></div>
+    </section>
+
+    <!-- /  Медиа -->
+    <section class="polytech-ads pb">
+		<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+    <h2 class="header_edu">Обучение в политехническом</h2>
+	<div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="4" data-polytech_items-sm="3" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+												<a href="/students/schedule/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/2e8/342.jpg" alt="Расписания и графики " class="full-width"/><div class="item_dsc"><span class="thematic_label">Расписания и графики </span></div>
+					
+				</div>
+							</a>
+															<a href="http://opendoors.spbstu.ru/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/dc0/14.jpg" alt="Стипендии в магистратуру и аспирантуру" class="full-width"/><div class="item_dsc"><span class="thematic_label">Стипендии в магистратуру и аспирантуру</span></div>
+					
+				</div>
+							</a>
+															<a href="/students/additional-education/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/e41/345.jpg" alt="Дополнительное образование" class="full-width"/><div class="item_dsc"><span class="thematic_label">Дополнительное образование</span></div>
+					
+				</div>
+							</a>
+															<a href="http://open.spbstu.ru">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/9f7/open.jpg" alt="Открытый Политех" class="full-width"/><div class="item_dsc"><span class="thematic_label">Открытый Политех</span></div>
+					
+				</div>
+							</a>
+						</div>
+</div>
+	</div>
+</div>
+
+    </section>
+	<section class="polytech-ads polytech-ads-01 pb">
+		<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+    <h2 class="header_edu">Студенческая жизнь  </h2>
+	<div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="4" data-polytech_items-sm="3" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+												<a href="/students/social-security/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/b9a/346.jpg" alt="Социальное обеспечение " class="full-width"/><div class="item_dsc"><span class="thematic_label">Социальное обеспечение </span></div>
+					
+				</div>
+							</a>
+															<a href="/students/student-association/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/e3e/403.jpg" alt="Студенческие объединения" class="full-width"/><div class="item_dsc"><span class="thematic_label">Студенческие объединения</span></div>
+					
+				</div>
+							</a>
+															<a href="http://fablab.spbstu.ru/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/1e3/348.jpg" alt="Наука и техническое творчество" class="full-width"/><div class="item_dsc"><span class="thematic_label">Наука и техническое творчество</span></div>
+					
+				</div>
+							</a>
+															<a href="http://ifkst.spbstu.ru/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/3da/404.jpg" alt="Спорт" class="full-width"/><div class="item_dsc"><span class="thematic_label">Спорт</span></div>
+					
+				</div>
+							</a>
+						</div>
+</div>
+	</div>
+</div>
+
+    </section>
+    <section class="polytech-ads pb">
+		<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+    <h2 class="header_edu">Университетские программы</h2>
+	<div class="owl-carousel owl-margins polytech-data-owl" data-polytech_items="4" data-polytech_items-sm="3" data-polytech_items-xs="2" data-polytech_singleitem="false" data-polytech_paginationnumbers="false"  data-polytech_navigation="true">
+												<a href="http://5-100.spbstu.ru/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/58f/5100.jpg" alt="Повышение конкурентоспособности" class="full-width"/><div class="item_dsc"><span class="thematic_label">Повышение конкурентоспособности</span></div>
+					
+				</div>
+							</a>
+															<a href="https://nticenter.spbstu.ru/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/eaa/502.jpg" alt="Центр компетенций НТИ СПбПУ " class="full-width"/><div class="item_dsc"><span class="thematic_label">Центр компетенций НТИ СПбПУ </span></div>
+					
+				</div>
+							</a>
+															<a href="http://nru.spbstu.ru/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/56b/389.jpg" alt="Развитие национального исследовательского университета" class="full-width"/><div class="item_dsc"><span class="thematic_label">Развитие национального исследовательского университета</span></div>
+					
+				</div>
+							</a>
+															<a href="http://www.spbstu.ru/university/strategy-development/program-development-student-unions/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/678/405.jpg" alt="Программа развития деятельности студенческих объединений" class="full-width"/><div class="item_dsc"><span class="thematic_label">Программа развития деятельности студенческих объединений</span></div>
+					
+				</div>
+							</a>
+															<a href="https://community.spbstu.ru/endowment/">
+							<div class="item  aud-item">
+					
+					<img src="/upload/iblock/2a1/fund.png" alt="Эндаумент-фонд СПбПУ" class="full-width"/><div class="item_dsc"><span class="thematic_label">Эндаумент-фонд СПбПУ</span></div>
+					
+				</div>
+							</a>
+						</div>
+</div>
+	</div>
+</div>
+
+    </section>
+    </main>
+<!-- / content -->
+
+<!-- footer -->
+<footer id="main-footer">
+    <div class="footer-info">
+        <div class="container">
+            <div class="info-menu" itemscope><a href="#footer_menu" data-toggle="collapse" aria-expanded="false" aria-controls="footer_menu" class="button-panel-collapsed">
+			<i class="fa fa-fw fa-info"></i> Полезная информация <i class="fa fa-angle-down"></i> </a>
+			<a href="/hotline/"><i class="fa fa-fw fa-bullhorn "></i> Противодействие коррупции</a>
+			<a href="/sveden/" itemprop="CommonURL"><i class="fa fa-fw fa-briefcase"></i> Сведения об образовательной организации</a>
+			<a href="/campus-map/"><i class="fa fa-fw fa-compass"></i> Карта кампуса</a>
+            <a href="/site-map/"><i class="fa fa-fw fa-sitemap"></i> Карта сайта</a></div>
+            <div id="footer_menu" class="collapse"><div class="row"><div class="col-sm-4"><ul><li><a href="/applicants/admissions/">Приемная комиссия</a></li><li><a href="/university/about-the-university/personalities/">Персоналии</a></li><li><a href="/media/edition/">Издания</a></li></ul></div><div class="col-sm-4"><ul><li><a href="/structure/institutes/">Институты</a></li><li><a href="/structure/units/">Подразделения</a></li><li><a href="/structure/informatsionno_bibliotechnyy_kompleks/">Информационно-библиотечный комплекс</a></li></ul></div><div class="col-sm-4"><ul><li><a href="http://ruz.spbstu.ru" target="_blank">Расписание занятий</a></li><li><a href="/media/announcements/competitions_grants/">Конкурсы и гранты</a></li><li><a href="/feedback/">Обращение граждан</a></li></ul></div></div></div>
+        </div>
+    </div>
+    <div class="f-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+					<span class="f-head">© 2010 - 2020 Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)</span>
+            <p>При использовании материалов портала активная ссылка на источник обязательна</p>
+			<div class="f-head-style">Размещение информации на сайте</div>
+			<div class="f-req">
+				Требования к формату подачи материалов и информацию по их размещению вы можете найти <a href="/information-requirements/" title="">в специальном разделе сайта</a>			</div>
+<div class="f-head-style"><a href="http://www.spbstu.ru/upload/personal_data_policy.pdf" target="_blank">Политика конфиденциальности <i class="fa fa-angle-right"></i></a></div>
+<a class="minobr-link" href="https://minobrnauki.gov.ru" target="_blank" title="Министерства науки и высшего образования Российской Федерации">Минобрнауки России</a> <a class="minobr-link" href="https://edu.gov.ru/" target="_blank" title="Министерства науки и высшего образования Российской Федерации">Минпросвещения России</a>
+<a class="minobr-link" href="https://bus.gov.ru" target="_blank">Сведения о независимой оценке</a>
+             <a class="minobr" href="http://scienceport.ru/" target="_blank"><img src="/images/against_terror.png" height="30" alt="" style="border-radius: 5px; margin-left:5px"></a>                </div>
+                <div class="col-md-4">
+					<span class="f-head">Контакты</span>
+     <div class="f-contacts"><span><i class="fa fa-map-marker"></i> ул. Политехническая, д. 29, Санкт-Петербург, 195251</span>
+<div class="clear"></div><span class="sect"><i class="fa fa-envelope"></i><a href="mailto:office@spbstu.ru">office@spbstu.ru</a></span>
+<div class="clear"></div>
+              <span class="b">Контактный центр: </span><span class="sect"><i class="fa fa-phone"></i> <a href="tel:+78127750530">+7 (812) 775-05-30 <br>- для звонков из Санкт-Петербурга </a></span>
+              <div class="clear"></div>
+              <span class="sect"><i class="fa fa-phone"></i> <a href="tel:88007071899">8 (800) 707-18-99 <br>- для звонков из любого региона РФ (звонок бесплатный)</a></span> 
+              <div class="clear"></div>
+
+            </div><br>                </div>
+                <div class="col-md-4">
+					<span class="f-head">Мы в социальных ресурсах</span>
+            <div class="f-socials"><a href="https://vk.com/pgpuspb" target="_blank"><i class="fa fa-vk"></i></a> <a href="https://www.facebook.com/polytechpetra" target="_blank"><i class="fa fa-facebook"></i></a> <!--a href="https://www.linkedin.com/edu/school?id=16848" target="_blank"><i class="fa fa-linkedin"></i></a--> <a href="https://twitter.com/pgpuspb" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://instagram.com/polytech_petra/" target="_blank"><i class="fa fa-instagram"></i></a> <a href="http://www.youtube.com/user/SPBMEDIACENTRE" target="_blank"><i class="fa fa-youtube-play"></i></a> </div>
+         
+ <!--  
+ <span class="f-head">Наши приложения</span>
+            <div class="f-apps"> <a href="https://itunes.apple.com/ru/app/spbpu/id929022265" target="_blank" title="Установить приложение из App Store"><i class="fa fa-apple"></i><span>App Store</span>
+              <div class="clear"></div>
+              </a> <a href="https://play.google.com/store/apps/details?id=ru.spbstu.spbpu" target="_blank" title="Установить приложение из Google Play"><i class="fa fa-android"></i><span>Google Play</span>
+              <div class="clear"></div>
+              </a></div><br>
+-->	                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- / footer -->
+</div>
+<!-- global wrapper -->
+
+<!-- End Document ================================================== -->
+
+
+<!-- external framework plugins -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+<![endif]-->
+
+<!-- external custom plugins -->
+<!-- RS5.0 Core JS Files -->
+    <!-- Yandex.Metrika counter -->
+        <noscript>
+        <div><img src="//mc.yandex.ru/watch/26376306" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+ <!-- /Google Analytics -->
+    <script  src="/local/templates/main/js/jquery-1.11.2.min.js"></script>
+<script  src="/local/templates/main/js/jquery-ui.min.js"></script>
+<script  src="/local/templates/main/js/core.js"></script>
+<script  src="/local/templates/main/js/touch.js"></script>
+<script  src="/local/templates/main/js/dropdown.js"></script>
+<script  src="/local/templates/main/js/chosen.jquery.min.js"></script>
+<script  src="/local/templates/main/js/main.js"></script>
+<script  src="/local/templates/main/js/jquery.plugin.min.js"></script>
+<script  src="/local/templates/main/js/jquery.countdown.min.js"></script>
+<script  src="/local/templates/main/js/jquery.countdown-ru.js"></script><script src="/bitrix/cache/js/s1/main/template_2932dbb057f4c094cbbb937a952fad77/template_2932dbb057f4c094cbbb937a952fad77.js?15984364476550"></script>
+<script>var _ba = _ba || []; _ba.push(["aid", "f1776f5da91268deca20cabaa451103b"]); _ba.push(["host", "www.spbstu.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<script>if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script>(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script>(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script><script src="/bitrix/cache/js/s1/main/kernel_main/kernel_main.js?1598441714310062"></script>
+<script src="/bitrix/js/main/core/core_db.min.js?14887140245062"></script>
+<script src="/bitrix/js/main/core/core_frame_cache.min.js?147480750011191"></script>
+<script>BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/core/core_fx.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js','/bitrix/components/bitrix/search.title/script.js']); </script>
+<script>BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/local/templates/.default/components/bitrix/news.list/big_banner_on_main/style.css','/local/templates/.default/components/bitrix/news.list/news_on_main/style.css','/local/templates/.default/components/bitrix/news.list/anonse_on_main/style.css','/local/components/ithive/photo_album_list/templates/gallery_sections_on_main/style.css','/local/templates/.default/components/bitrix/news.list/video_on_main/style.css','/local/templates/.default/components/bitrix/news.list/edition_on_main/style.css','/local/templates/.default/components/bitrix/news.list/banners_on_main/style.css','/local/templates/main/css/chosen.css','/local/templates/main/polytech-framework/external-plugins/external-plugins.css','/local/templates/main/css/polytech-framework-layout.css','/local/templates/main/polytech-framework/css/color/polytech-framework-color.css','/local/templates/main/css/jquery-ui-1.10.1.css','/local/templates/main/css/custom.css','/local/templates/main/css/dropdown.css','/local/templates/main/css/search/style.css','/local/templates/main/css/skin.css','/local/templates/main/css/jquery.countdown.css','/local/templates/main/css/footable.core.min.css','/local/templates/main/css/video-js.css','/local/templates/.default/components/bitrix/search.title/search_main_m/style.css','/local/templates/.default/components/bitrix/search.title/search_main/style.css','/local/templates/.default/components/bitrix/menu/institutions_menu_dinamic/style.css','/local/templates/.default/components/bitrix/menu/unit_menu_dinamic/style.css','/local/templates/.default/components/bitrix/menu/top_menu/style.css','/local/templates/.default/components/bitrix/menu/main/style.css','/local/templates/.default/components/bitrix/menu/footer_menu/style.css','/local/templates/main/styles.css']); </script>
+<script src="/local/templates/main/polytech-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5KLQ2JZ');</script>
+<script>
+	BX.ready(function(){
+		new JCTitleSearch({
+			'AJAX_PAGE' : '/',
+			'CONTAINER_ID': 'sb-search_1',
+			'INPUT_ID': 'search_1',
+			'MIN_QUERY_LEN': 2
+		});
+	});
+</script>
+<script>
+	BX.ready(function(){
+		new JCTitleSearch({
+			'AJAX_PAGE' : '/',
+			'CONTAINER_ID': 'sb-search',
+			'INPUT_ID': 'search',
+			'MIN_QUERY_LEN': 2
+		});
+	});
+</script>
+<script src="/local/templates/main/polytech-framework/external-plugins/external-plugins.js"></script>
+<script src="/local/templates/main/js/politech-framework.js"></script>
+
+<script src="/local/templates/main/polytech-framework/external-plugins/selectivizr.min.js"></script>
+<script src="/local/templates/main/js/footable.js"></script>
+<script src="/local/templates/main/js/footable.sort.js"></script>
+
+<script src="/local/templates/main/js-plugins/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script src="/local/templates/main/js-plugins/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+<script src="/local/templates/main/js-plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/local/templates/main/js-plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/local/templates/main/js-plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/local/templates/main/js/custom.js"></script>
+<script src="/local/templates/main/js/classie.js"></script>
+<script src="/local/templates/main/js/js.cookie.js"></script>
+<script src="/local/templates/main/js/bvi-init.min.js"></script>
+<script src="/local/templates/main/js/bvi.min.js"></script>
+<script src="/local/templates/main/js/uisearch.js"></script>
+<script src="/local/templates/main/js/particles.min.js"></script>
+<script src="/local/templates/main/js/particles-conf.js"></script>
+<script src="/local/templates/main/js/calendar.js"></script>
+<script>
+  new UISearch(document.getElementById('sb-search'));
+</script>
+<script>
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+          try {
+            w.yaCounter26376306 = new Ya.Metrika({
+              id: 26376306,
+              webvisor: true,
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true
+            });
+          } catch (e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+
+        s.async = true;
+        s.src   = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55245252-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-55245252-1');
+</script>
+<script>
+      var newYear = new Date();
+      dateVar     = new Date(2019, 2 - 1, 19, 0);
+      $(".counter").countdown({until: dateVar, format: 'dHMS'});
+    </script>
+<script>
+  (function (d, t, p) {
+    var j   = d.createElement(t);
+    j.async = true;
+    j.src   = ("https:" == p ? "https:" : "http:") + "//stat.sputnik.ru/cnt.js";
+    var s   = d.getElementsByTagName(t)[0];
+    s.parentNode.insertBefore(j, s);
+  })(document, "script", document.location.protocol);
+</script>
+<script src="//vk.com/js/api/openapi.js?150"></script>
+<script>
+  if ($("#vk_groups").length) {
+    VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", no_cover: 0, color2: '21A649', color3: '21A649'}, 61195360);
+  }
+</script>
+</body>
+</html>
+<!--cdbfb3f152e5bd6d2d974d42a1878b61-->

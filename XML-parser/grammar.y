@@ -1,4 +1,6 @@
 %{ 
+    #include <stdbool.h> 
+    
     #include "C_str.h"
     #include "C_Attribute.h"
     #include "C_Attributes.h"
@@ -9,6 +11,8 @@
     yydebug = 1; 
 #endif
 
+    extern int g_unknownSyntaxErrorQnt;
+    extern bool g_checkNesting;
     extern int g_line;
     
 %} 
@@ -83,11 +87,23 @@
            |    open_tag element_body close_tag  
            |    open_tag error
                 {
-                    PrintError("[E] open_tag error.\n");
+                    PrintError("[E,%d]: (Critical error) Element structure error.\n", g_line);
+
+                    g_unknownSyntaxErrorQnt--;
+
+                    yyerrok;
+
+                    Exit(-1);
                 }
            |    open_tag element_body error
                 {
-                    PrintError("[E] open_tag error.\n");
+                    PrintError("[E,%d]: (Critical error) Element structure error.\n", g_line);
+
+                    g_unknownSyntaxErrorQnt--;
+
+                    yyerrok;
+
+                    Exit(-1);
                 }
     ;
 
@@ -97,7 +113,7 @@
 
     element_body:   ELEMENT_TEXT
                 |   element
-                |   element_body  ELEMENT_TEXT
+                |   element_body ELEMENT_TEXT
                 |   element_body element 
     ;
 
@@ -119,6 +135,7 @@
     open_tag:   K_ELEM_OPEN_TAG_OPEN_BRACKET NAME K_ELEM_TAG_CLOSE_BRACKET
                 {
                     ValidateName($2);
+
                     AddToTagList($2, Open);
 
                     free_C_str(& $2);
@@ -127,47 +144,43 @@
                 {
                     ValidateName($2);
                     Validate_C_Attributes( & $3);
+
                     AddToTagList($2, Open);
 
                     free_C_str(& $2);
                 }
-            |   K_ELEM_OPEN_TAG_OPEN_BRACKET NAME attributes error 
+            |   K_ELEM_OPEN_TAG_OPEN_BRACKET NAME attributes error
                 {
                    ValidateName($2);
                    Validate_C_Attributes( & $3);
-                   PrintError("[E,%d]: Open tag of element \"",$2.line);
+
+                   PrintError("[E,%d]: (Critical error) Open tag of element \"",$2.line);
                    PrintStr($2);
-                   PrintError("\" doesn't have \">\".\n");
+                   PrintError("\" structure error.\n");   
+
+                   g_checkNesting = false;
+                   g_unknownSyntaxErrorQnt--;
 
                    free_C_str(& $2);
+                   yyerrok;
+
+                   Exit(-1);
                 }
-            |   K_ELEM_OPEN_TAG_OPEN_BRACKET NAME error 
+            |   K_ELEM_OPEN_TAG_OPEN_BRACKET NAME error K_ELEM_TAG_CLOSE_BRACKET
                 {
                    ValidateName($2);
-                   PrintError("[E,%d]: Open tag of element \"",$2.line);
+
+                   PrintError("[E,%d]: (Critical error) Open tag of element \"",$2.line);
                    PrintStr($2);
-                   PrintError("\" doesn't have \">\".\n");
+                   PrintError("\" structure error.\n");
+
+                   g_checkNesting = false;
+                   g_unknownSyntaxErrorQnt--;
 
                    free_C_str(& $2);
-                }
-            |   K_ELEM_OPEN_TAG_OPEN_BRACKET error NAME K_ELEM_TAG_CLOSE_BRACKET
-                {
-                    ValidateName($3);
-                    AddToTagList($3, Open);
+                   yyerrok;
 
-                    free_C_str(& $3);
-                }
-            |   K_ELEM_OPEN_TAG_OPEN_BRACKET error NAME attributes K_ELEM_TAG_CLOSE_BRACKET
-                {
-                    ValidateName($3);
-                    Validate_C_Attributes( & $4);
-                    AddToTagList($3, Open);
-
-                    free_C_str(& $3);
-
-                    PrintError("[E,%d]: Name \"", $3.line);
-                    PrintStr($3);
-                    PrintError("\" starts with invalid symbol sequence.\n");
+                   Exit(-1);
                 }
     ;
 
@@ -181,11 +194,16 @@
              |  K_ELEM_CLOSE_TAG_OPEN_BRACKET NAME error 
                 {
                    ValidateName($2);
+
                    PrintError("[E,%d]: Close tag of element \"",$2.line);
                    PrintStr($2);
                    PrintError("\" doesn't have \">\".\n");
 
+                   g_unknownSyntaxErrorQnt--;
+                   g_checkNesting = false;
+
                    free_C_str(& $2);
+                   yyerrok;
                 }
 
     close_tags:  close_tag
@@ -196,12 +214,14 @@
                 {
                     Init_C_Atributes(& $$);
                     Add_C_Attribute(& $1, & $$);
+
                     free_C_str(& $1.name);
                     free_C_str(& $1.value);
                 }
               | attributes attribute
                 {
                     Add_C_Attribute(& $2, & $1);
+
                     free_C_str(& $2.name);
                     free_C_str(& $2.value);
                 }
@@ -216,6 +236,18 @@
                {
                 $$.name = $1;
                 $$.value = $4;
+               }
+            |  NAME '=' error
+               {
+                PrintError("[E,%d]: Attribute value must be quoted with \" or \' quotes.\n", $1.line);
+
+                $$.name = $1;
+                str_Init( & $$.value, "error");
+
+                g_unknownSyntaxErrorQnt--;
+
+                yyerrok;
+                
                }
     ;
  
