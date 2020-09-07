@@ -28,7 +28,7 @@
 using namespace std;
 
 extern string fileToParse;
-extern "C" extern int g_unknownSyntaxErrorQnt;
+extern "C" int g_unknownSyntaxErrorQnt;
 
 extern "C" void PrintError(char const* const _Format, ...)
 {
