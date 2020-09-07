@@ -1,24 +1,17 @@
-<?xml version="trash"?>
-<root_1>Text
-	</not_closed_close_tag_1>Text
-	<element_1>Text
-		<improperly_nested_1>Text
-			<improperly_nested_2>Text
-		</improperly_nested_1>Text
-			</not_closed_close_tag_2>
-			</improperly_nested_2>Text
-	</element_1>Text
-	<element_2>Text
-		<improperly_nested_3 attribute="value" >Text
-			<improperly_nested_4>Text
-				<not_closed_open_tag_1>Text
-		</improperly_nested_3>Text
-			</improperly_nested_4>Text
-	</element_2>Text
-	<not_closed_open_tag_2>Text
-</root_1>
-<root_2>Text
-	<element_3>Text
-	</element_3>Text
-</root_2>
-<!-- -- -->
+<?xml version="1.0" encoding="UTF-8"?>
+<html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
+<xsl:for-each select="breakfast_menu/food">
+  <div style="background-color:teal;color:white;padding:4px">
+    <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
+    <xsl:value-of select="price"/>
+    </div>
+  <div style="margin-left:20px;margin-bottom:1em;font-size:10pt">
+    <p>
+    <xsl:value-of select="description"/>
+    <span style="font-style:italic"> (<xsl:value-of select="calories"/> calories per serving)</span>
+    </p>
+  </div>
+</xsl:for-each>
+</body>
+</html>

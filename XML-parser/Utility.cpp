@@ -437,11 +437,26 @@ bool ValidateName(string name, int line)
 
 	if (_stricmp(_1st_3_chars, "xml") == 0)
 	{
+		if (name.size() == 5 &&
+			(name.c_str())[3] == 'n' &&
+			(name.c_str())[4] == 's')
+		{
+			return true;
+		}
+
+		if (name.size() > 5 &&
+			(name.c_str())[3] == 'n' &&
+			(name.c_str())[4] == 's' &&
+			(name.c_str())[5] == ':')
+		{
+			return true;
+		}
+
 		PrintError("[E,%d]: name \"%s\" contains \"[xX][mM][lL]\" pattern in the beggining of the string.\n", line, name.c_str());
 		return false;
 	}
 
-	return false;
+	return true;
 }
 
 bool ValidateAtrributeList(list<Attribute> & attributes)
