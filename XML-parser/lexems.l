@@ -94,7 +94,7 @@ cdataOpenTag		\<\!\[CDATA\[
 					}
 
 <INITIAL><<EOF>>		{
-							PrintError("[E]: File is empty or doesn't contain any XML data.\n");
+							PrintError("[E]: File doesn't contain xml data.\n");
 							Exit(-1);
 						}
 
@@ -104,10 +104,16 @@ cdataOpenTag		\<\!\[CDATA\[
 							yy_push_state( EXPECTING_NAME );
 							return K_ELEM_OPEN_TAG_OPEN_BRACKET;
 						}
+<EXPECTING_ROOT>\<\/	{
+							yy_push_state( BODY );
+							yy_push_state( OPEN_TAG );
+							yy_push_state( EXPECTING_NAME );
+							return K_ELEM_CLOSE_TAG_OPEN_BRACKET;
+						}
 <EXPECTING_ROOT><<EOF>> {
 							if(!rootIsScanned)
 							{
-								PrintError("[E]: File is empty.\n");
+								PrintError("[E]: Unexpected end of file.\n");
 								Exit(-1);
 							}
 						}
