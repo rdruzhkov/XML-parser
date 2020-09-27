@@ -16,8 +16,8 @@ echo "\nStarting testing...\n"
 ./XML-parser.out test_14_ok_just_one_root.xml
 ./XML-parser.out test_15_fail_single_open_tag.xml
 ./XML-parser.out test_16_fail_single_close_tag.xml
-./XML-parser.out test_17_double_root.xml
-./XML-parser.out test_18_empty.xml
+./XML-parser.out test_17_fail_double_root.xml
+./XML-parser.out test_18_fail_empty.xml
 ./XML-parser.out test_19_fail_unescaped_char_tag_have_no_pair.xml
 ./XML-parser.out test_20_fail_malformatted_comment.xml
 

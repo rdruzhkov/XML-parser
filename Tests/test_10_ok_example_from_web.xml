@@ -1,4 +1,4 @@
-<xs:root xmlnasdasd:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:root xmlns:xs='http://www.w3.org/2001/XMLSchema'>
  <!-- Example from web -->
  <xs:element name="addresses">
  <xs:complexType>
